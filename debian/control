@@ -1,0 +1,12 @@
+Source: ros-hydro-strands-perception-people
+Section: misc
+Priority: extra
+Maintainer: Christian Dondrup <cdondrup@lincoln.ac.uk>
+Build-Depends: debhelper (>= 9.0.0), ros-hydro-catkin
+Homepage: https://github.com/strands-project/strands_perception_people
+Standards-Version: 3.9.2
+
+Package: ros-hydro-strands-perception-people
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-hydro-bayes-people-tracker, ros-hydro-bayes-people-tracker-logging, ros-hydro-ground-plane-estimation, ros-hydro-mdl-people-tracker, ros-hydro-odometry-to-motion-matrix, ros-hydro-perception-people-launch, ros-hydro-upper-body-detector, ros-hydro-visual-odometry
+Description: The strands_perception_people metapackage
