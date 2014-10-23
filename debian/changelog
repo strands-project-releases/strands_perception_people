@@ -1,0 +1,25 @@
+ros-hydro-mdl-people-tracker (0.0.3-0precise) precise; urgency=high
+
+  * Added LICENSE files. Fixes #101 <https://github.com/strands-project/strands_perception_people/issues/101>
+  * Contributors: Lucas Beyer
+
+ -- Christian Dondrup <cdondrup@lincoln.ac.uk>  Wed, 22 Oct 2014 23:00:00 -0000
+
+ros-hydro-mdl-people-tracker (0.0.2-0precise) precise; urgency=high
+
+
+
+ -- Christian Dondrup <cdondrup@lincoln.ac.uk>  Fri, 17 Oct 2014 23:00:00 -0000
+
+ros-hydro-mdl-people-tracker (0.0.1-0precise) precise; urgency=high
+
+  * removed groundHOG references from code.
+  * renaming mdl-People_tracker launch files
+    to comply with the rest of the structure and to make releasing easier.
+  * Renamed strands_pedestrian_tracking to mdl_people_tracker
+    This also includes renaming the messages and most of the parameters.
+  * Contributors: Christian Dondrup
+
+ -- Christian Dondrup <cdondrup@lincoln.ac.uk>  Fri, 17 Oct 2014 23:00:00 -0000
+
+
