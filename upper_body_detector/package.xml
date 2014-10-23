@@ -1,12 +1,12 @@
 <?xml version="1.0"?>
 <package>
   <name>upper_body_detector</name>
-  <version>0.0.2</version>
+  <version>0.0.3</version>
   <description>The upper_body_detector package</description>
 
   <maintainer email="cdondrup@lincoln.ac.uk">Christian Dondrup</maintainer>
 
-  <license>TODO</license>
+  <license>BSD</license>
 
   <url type="website">https://github.com/strands-project/strands_perception_people</url>
 
