@@ -2,6 +2,14 @@
 Changelog for package odometry_to_motion_matrix
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+0.0.7 (2014-10-29)
+------------------
+* eigen is now part of cmake_modules
+* Contributors: Christian Dondrup
+
+0.0.6 (2014-10-29)
+------------------
+
 0.0.5 (2014-10-29)
 ------------------
 
