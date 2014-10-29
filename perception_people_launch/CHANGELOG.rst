@@ -2,6 +2,12 @@
 Changelog for package perception_people_launch
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+0.0.7 (2014-10-29)
+------------------
+
+0.0.6 (2014-10-29)
+------------------
+
 0.0.5 (2014-10-29)
 ------------------
 * The people_msgs package does not exist in indigo yet
