@@ -2,6 +2,12 @@
 Changelog for package bayes_people_tracker_logging
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+0.0.5 (2014-10-29)
+------------------
+
+0.0.4 (2014-10-29)
+------------------
+
 0.0.3 (2014-10-23)
 ------------------
 * Added LICENSE files. Fixes `#101 <https://github.com/strands-project/strands_perception_people/issues/101>`_

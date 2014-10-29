@@ -2,6 +2,17 @@
 Changelog for package perception_people_launch
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+0.0.5 (2014-10-29)
+------------------
+* The people_msgs package does not exist in indigo yet
+* Contributors: Christian Dondrup
+
+0.0.4 (2014-10-29)
+------------------
+* Removing the leg_detector from the run_dependencies of the launch package for indigo release.
+  leg_detector is not released for indigo yet.
+* Contributors: Christian Dondrup
+
 0.0.3 (2014-10-23)
 ------------------
 * Added LICENSE files. Fixes `#101 <https://github.com/strands-project/strands_perception_people/issues/101>`_
