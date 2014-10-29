@@ -1,0 +1,58 @@
+ros-indigo-visual-odometry (0.0.7-0trusty) trusty; urgency=high
+
+
+
+ -- Christian Dondrup <cdondrup@lincoln.ac.uk>  Wed, 29 Oct 2014 00:00:00 -0000
+
+ros-indigo-visual-odometry (0.0.6-0trusty) trusty; urgency=high
+
+  * Eigen is now part of cmake_modules
+  * Contributors: Christian Dondrup
+
+ -- Christian Dondrup <cdondrup@lincoln.ac.uk>  Wed, 29 Oct 2014 00:00:00 -0000
+
+ros-indigo-visual-odometry (0.0.5-0trusty) trusty; urgency=high
+
+
+
+ -- Christian Dondrup <cdondrup@lincoln.ac.uk>  Wed, 29 Oct 2014 00:00:00 -0000
+
+ros-indigo-visual-odometry (0.0.4-0trusty) trusty; urgency=high
+
+
+
+ -- Christian Dondrup <cdondrup@lincoln.ac.uk>  Wed, 29 Oct 2014 00:00:00 -0000
+
+ros-indigo-visual-odometry (0.0.3-0trusty) trusty; urgency=high
+
+
+
+ -- Christian Dondrup <cdondrup@lincoln.ac.uk>  Wed, 22 Oct 2014 23:00:00 -0000
+
+ros-indigo-visual-odometry (0.0.2-0trusty) trusty; urgency=high
+
+
+
+ -- Christian Dondrup <cdondrup@lincoln.ac.uk>  Fri, 17 Oct 2014 23:00:00 -0000
+
+ros-indigo-visual-odometry (0.0.1-0trusty) trusty; urgency=high
+
+  * Some bug fixes
+  * Prepared visual_odometry for release.
+  * strands_visual_odometry is now visual_odometry
+  * Addressing issue #15 <https://github.com/strands-project/strands_perception_people/issues/15> and #16 <https://github.com/strands-project/strands_perception_people/issues/16>
+  * Closing issue #7 <https://github.com/strands-project/strands_perception_people/issues/7>
+    Added tracking into repository
+  * cv_bridge solved the problem with the depth image
+  * Fixes issue #1 <https://github.com/strands-project/strands_perception_people/issues/1>.
+    Also fixes a bug where the _msgs at the end of strands_perception_people was missing.
+  * Not needed anymore. Moved to msgs package with previous commit.
+  * Moved VO msg to perception_people_msgs package.
+  * removed endline at end of file
+  * Initial commit of ros node for visual odometry.
+  * Added 3rdparty fovis files.
+  * Contributors: Christian Dondrup, Dennis Mitzel, cdondrup
+
+ -- Christian Dondrup <cdondrup@lincoln.ac.uk>  Fri, 17 Oct 2014 23:00:00 -0000
+
+
