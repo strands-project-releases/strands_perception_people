@@ -1,0 +1,55 @@
+ros-indigo-mdl-people-tracker (0.0.8-0trusty) trusty; urgency=high
+
+
+
+ -- Christian Dondrup <cdondrup@lincoln.ac.uk>  Thu, 30 Oct 2014 00:00:00 -0000
+
+ros-indigo-mdl-people-tracker (0.0.7-0trusty) trusty; urgency=high
+
+
+
+ -- Christian Dondrup <cdondrup@lincoln.ac.uk>  Wed, 29 Oct 2014 00:00:00 -0000
+
+ros-indigo-mdl-people-tracker (0.0.6-0trusty) trusty; urgency=high
+
+
+
+ -- Christian Dondrup <cdondrup@lincoln.ac.uk>  Wed, 29 Oct 2014 00:00:00 -0000
+
+ros-indigo-mdl-people-tracker (0.0.5-0trusty) trusty; urgency=high
+
+
+
+ -- Christian Dondrup <cdondrup@lincoln.ac.uk>  Wed, 29 Oct 2014 00:00:00 -0000
+
+ros-indigo-mdl-people-tracker (0.0.4-0trusty) trusty; urgency=high
+
+
+
+ -- Christian Dondrup <cdondrup@lincoln.ac.uk>  Wed, 29 Oct 2014 00:00:00 -0000
+
+ros-indigo-mdl-people-tracker (0.0.3-0trusty) trusty; urgency=high
+
+  * Added LICENSE files. Fixes #101 <https://github.com/strands-project/strands_perception_people/issues/101>
+  * Contributors: Lucas Beyer
+
+ -- Christian Dondrup <cdondrup@lincoln.ac.uk>  Wed, 22 Oct 2014 23:00:00 -0000
+
+ros-indigo-mdl-people-tracker (0.0.2-0trusty) trusty; urgency=high
+
+
+
+ -- Christian Dondrup <cdondrup@lincoln.ac.uk>  Fri, 17 Oct 2014 23:00:00 -0000
+
+ros-indigo-mdl-people-tracker (0.0.1-0trusty) trusty; urgency=high
+
+  * removed groundHOG references from code.
+  * renaming mdl-People_tracker launch files
+    to comply with the rest of the structure and to make releasing easier.
+  * Renamed strands_pedestrian_tracking to mdl_people_tracker
+    This also includes renaming the messages and most of the parameters.
+  * Contributors: Christian Dondrup
+
+ -- Christian Dondrup <cdondrup@lincoln.ac.uk>  Fri, 17 Oct 2014 23:00:00 -0000
+
+
