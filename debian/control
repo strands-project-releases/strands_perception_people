@@ -1,0 +1,12 @@
+Source: ros-hydro-bayes-people-tracker
+Section: misc
+Priority: extra
+Maintainer: Christian Dondrup <cdondrup@lincoln.ac.uk>
+Build-Depends: debhelper (>= 9.0.0), libboost-all-dev, ros-hydro-bayes-tracking, ros-hydro-catkin, ros-hydro-geometry-msgs, ros-hydro-message-generation, ros-hydro-roscpp, ros-hydro-std-msgs, ros-hydro-tf, ros-hydro-visualization-msgs
+Homepage: https://github.com/strands-project/strands_perception_people
+Standards-Version: 3.9.2
+
+Package: ros-hydro-bayes-people-tracker
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, libboost-all-dev, ros-hydro-bayes-tracking, ros-hydro-geometry-msgs, ros-hydro-message-runtime, ros-hydro-roscpp, ros-hydro-std-msgs, ros-hydro-tf, ros-hydro-visualization-msgs
+Description: The bayes_people_tracker package
