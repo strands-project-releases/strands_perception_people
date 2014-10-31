@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <package>
   <name>visual_odometry</name>
-  <version>0.0.11</version>
+  <version>0.0.12</version>
   <description>The visual_odometry package</description>
 
   <maintainer email="cdondrup@lincoln.ac.uk">Christian Dondrup</maintainer>
@@ -17,7 +17,6 @@
   <buildtool_depend>catkin</buildtool_depend>
 
   <build_depend>boost</build_depend>
-  <build_depend>cmake_modules</build_depend>
   <build_depend>cv_bridge</build_depend>
   <build_depend>eigen</build_depend>
   <build_depend>image_transport</build_depend>
@@ -26,7 +25,6 @@
   <build_depend>roscpp</build_depend>
   <build_depend>sensor_msgs</build_depend>
   <build_depend>std_msgs</build_depend>
-  <build_depend>tf</build_depend>
 
   <run_depend>boost</run_depend>
   <run_depend>cv_bridge</run_depend>
