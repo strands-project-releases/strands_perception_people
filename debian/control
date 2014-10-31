@@ -1,0 +1,12 @@
+Source: ros-hydro-detector-msg-to-pose-array
+Section: misc
+Priority: extra
+Maintainer: Christian Dondrup <cdondrup@lincoln.ac.uk>
+Build-Depends: debhelper (>= 9.0.0), ros-hydro-catkin, ros-hydro-genpy, ros-hydro-geometry-msgs, ros-hydro-roslib, ros-hydro-rospy, ros-hydro-rostopic
+Homepage: https://github.com/strands-project/strands_perception_people
+Standards-Version: 3.9.2
+
+Package: ros-hydro-detector-msg-to-pose-array
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-hydro-genpy, ros-hydro-geometry-msgs, ros-hydro-roslib, ros-hydro-rospy, ros-hydro-rostopic
+Description: The detector_msg_to_pose_array package
