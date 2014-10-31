@@ -2,9 +2,34 @@
 Changelog for package bayes_people_tracker
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-0.0.12 (2014-10-31)
+0.0.13 (2014-10-31)
 -------------------
-* Added proper link to paper describing bayes_tracker
+
+0.0.11 (2014-10-30)
+-------------------
+
+0.0.10 (2014-10-30)
+-------------------
+
+0.0.9 (2014-10-30)
+------------------
+
+0.0.8 (2014-10-30)
+------------------
+
+0.0.7 (2014-10-29)
+------------------
+
+0.0.6 (2014-10-29)
+------------------
+
+0.0.5 (2014-10-29)
+------------------
+
+0.0.4 (2014-10-29)
+------------------
+* Removing the leg_detector from the run_dependencies of the launch package for indigo release.
+  leg_detector is not released for indigo yet.
 * Contributors: Christian Dondrup
 
 0.0.3 (2014-10-23)
