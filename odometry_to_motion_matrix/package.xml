@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <package>
   <name>odometry_to_motion_matrix</name>
-  <version>0.0.13</version>
+  <version>0.0.14</version>
   <description>The odometry_to_motion_matrix package</description>
 
   <maintainer email="cdondrup@lincoln.ac.uk">Christian Dondrup</maintainer>
@@ -14,7 +14,6 @@
 
   <buildtool_depend>catkin</buildtool_depend>
   
-  <build_depend>cmake_modules</build_depend>
   <build_depend>eigen</build_depend>
   <build_depend>eigen_conversions</build_depend>
   <build_depend>nav_msgs</build_depend>
