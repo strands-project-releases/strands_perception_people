@@ -2,6 +2,12 @@
 Changelog for package bayes_people_tracker_logging
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+0.0.14 (2014-11-23)
+-------------------
+* Removing upped body detector and mdl people tracker from logging
+  Those two are slowing down the logging and prevent logging if there is only detections via the leg detector.
+* Contributors: Christian Dondrup
+
 0.0.12 (2014-10-31)
 -------------------
 
