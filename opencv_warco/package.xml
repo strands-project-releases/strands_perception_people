@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <package>
   <name>opencv_warco</name>
-  <version>0.1.0</version>
+  <version>0.1.1</version>
   <description>Library to perform head-pose classification using the WARCO method.</description>
 
   <maintainer email="beyer@vision.rwth-aachen.de">Lucas Beyer</maintainer>
@@ -10,7 +10,7 @@
   <!-- Commonly used license strings: -->
   <license>MIT</license>
 
-  <url type="website">https://github.com/lucasb-eyer/opencv-warco</url>
+  <url type="website">https://github.com/lucasb-eyer/opencv_warco</url>
 
   <author email="beyer@vision.rwth-aachen.de">Lucas Beyer</author>
 
