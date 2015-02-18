@@ -1,0 +1,96 @@
+ros-indigo-perception-people-launch (0.0.13-1trusty) trusty; urgency=high
+
+  * Making camera topic reconfigurable
+    So far only the camera namespace was configurable but that introduced an implicit dependency on the openni_wrapper.
+    With these changes the whole topic is reconfigurable via a parameter, e.g.:
+    camera_namespace:=/my_cam
+    depth_image:=/depth/image
+    results in /my_cam/depth/image as a topic for the depth image. So camera_namespace + depth_image = the topic on which to look for the depth image.
+  * Contributors: Christian Dondrup
+
+ -- Christian Dondrup <cdondrup@lincoln.ac.uk>  Fri, 31 Oct 2014 00:00:00 -0000
+
+ros-indigo-perception-people-launch (0.0.11-1trusty) trusty; urgency=high
+
+
+
+ -- Christian Dondrup <cdondrup@lincoln.ac.uk>  Thu, 30 Oct 2014 00:00:00 -0000
+
+ros-indigo-perception-people-launch (0.0.10-1trusty) trusty; urgency=high
+
+
+
+ -- Christian Dondrup <cdondrup@lincoln.ac.uk>  Thu, 30 Oct 2014 00:00:00 -0000
+
+ros-indigo-perception-people-launch (0.0.9-1trusty) trusty; urgency=high
+
+
+
+ -- Christian Dondrup <cdondrup@lincoln.ac.uk>  Thu, 30 Oct 2014 00:00:00 -0000
+
+ros-indigo-perception-people-launch (0.0.8-1trusty) trusty; urgency=high
+
+
+
+ -- Christian Dondrup <cdondrup@lincoln.ac.uk>  Thu, 30 Oct 2014 00:00:00 -0000
+
+ros-indigo-perception-people-launch (0.0.7-1trusty) trusty; urgency=high
+
+
+
+ -- Christian Dondrup <cdondrup@lincoln.ac.uk>  Wed, 29 Oct 2014 00:00:00 -0000
+
+ros-indigo-perception-people-launch (0.0.6-1trusty) trusty; urgency=high
+
+
+
+ -- Christian Dondrup <cdondrup@lincoln.ac.uk>  Wed, 29 Oct 2014 00:00:00 -0000
+
+ros-indigo-perception-people-launch (0.0.5-1trusty) trusty; urgency=high
+
+  * The people_msgs package does not exist in indigo yet
+  * Contributors: Christian Dondrup
+
+ -- Christian Dondrup <cdondrup@lincoln.ac.uk>  Wed, 29 Oct 2014 00:00:00 -0000
+
+ros-indigo-perception-people-launch (0.0.4-1trusty) trusty; urgency=high
+
+  * Removing the leg_detector from the run_dependencies of the launch package for indigo release.
+    leg_detector is not released for indigo yet.
+  * Contributors: Christian Dondrup
+
+ -- Christian Dondrup <cdondrup@lincoln.ac.uk>  Wed, 29 Oct 2014 00:00:00 -0000
+
+ros-indigo-perception-people-launch (0.0.3-1trusty) trusty; urgency=high
+
+  * Added LICENSE files. Fixes #101 <https://github.com/strands-project/strands_perception_people/issues/101>
+  * Contributors: Lucas Beyer
+
+ -- Christian Dondrup <cdondrup@lincoln.ac.uk>  Thu, 23 Oct 2014 00:00:00 -0000
+
+ros-indigo-perception-people-launch (0.0.2-1trusty) trusty; urgency=high
+
+  * Removed ground_hog from run_deps
+  * Contributors: Christian Dondrup
+
+ -- Christian Dondrup <cdondrup@lincoln.ac.uk>  Sat, 18 Oct 2014 00:00:00 -0000
+
+ros-indigo-perception-people-launch (0.0.1-1trusty) trusty; urgency=high
+
+  * removed groundHOG references from code.
+  * renaming mdl-People_tracker launch files
+    to comply with the rest of the structure and to make releasing easier.
+  * Renamed strands_pedestrian_tracking to mdl_people_tracker
+    This also includes renaming the messages and most of the parameters.
+  * Some bug fixes
+  * Prepared launch package for release.
+  * Renamed pedestrian_tracker launch files
+  * Calling the leg_detector directly to not need a private fork anymore.
+  * Splitting utils package into seperate packages.
+  * strands_visual_odometry is now visual_odometry
+  * strands_perception_people_launch is now perception_people_launch
+  * Contributors: Christian Dondrup
+
+ -- Christian Dondrup <cdondrup@lincoln.ac.uk>  Sat, 18 Oct 2014 00:00:00 -0000
+
+
