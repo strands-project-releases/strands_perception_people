@@ -1,6 +1,6 @@
 <launch>
     <!-- Global paramters -->
-    <arg name="load_params_from_file" default="false" />
+    <arg name="load_params_from_file" default="true" />
     <arg name="gp_queue_size" default="5" />
     <arg name="vo_queue_size" default="5" />
     <arg name="ubd_queue_size" default="5" />
@@ -32,7 +32,7 @@
     <arg name="machine" default="localhost" />
     <arg name="user" default="" />
 
-    <machine name="$(arg machine)" address="$(arg machine)" env-loader="/opt/strands/strands_catkin_ws/devel/env.sh" user="$(arg user)" default="true"/>
+    <machine name="$(arg machine)" address="$(arg machine)" env-loader="$(optenv ROS_ENV_LOADER )" user="$(arg user)" default="true"/>
     
     <!-- Visual Odometry 
     <include file="$(find visual_odometry)/launch/visual_odometry.launch">
@@ -111,10 +111,10 @@
         <arg name="user" value="$(arg user)"/>
     </include>
     
-    <!-- Leg Detector - NOT RELEASE FOR INDIGO YET!!! 
+    <!-- Leg Detector -->
     <node pkg="leg_detector" type="leg_detector" name="leg_detector" args="scan:=$(arg scan) $(find leg_detector)/config/trained_leg_detector.yaml" output="screen">
         <param name="fixed_frame" type="string" value="odom" />
-    </node> -->
+    </node>
     
     <!-- Logging -->
     <include file="$(find bayes_people_tracker_logging)/launch/logging.launch">
