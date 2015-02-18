@@ -708,7 +708,7 @@ int main(int argc, char **argv)
     string config_file;
     string cam_ns;
     string topic_gp;
-    //string topic_groundHOG;
+    string topic_groundHOG;
     string topic_upperbody;
     string topic_vo;
 
@@ -727,7 +727,7 @@ int main(int argc, char **argv)
 
     private_node_handle_.param("camera_namespace", cam_ns, string("/head_xtion"));
     private_node_handle_.param("ground_plane", topic_gp, string("/ground_plane"));
-    //private_node_handle_.param("ground_hog", topic_groundHOG, string("/groundHOG/detections"));
+    private_node_handle_.param("ground_hog", topic_groundHOG, string("/groundHOG/detections"));
     private_node_handle_.param("upper_body_detections", topic_upperbody, string("/upper_body_detector/detections"));
     private_node_handle_.param("visual_odometry", topic_vo, string("/visual_odometry/motion_matrix"));
 
