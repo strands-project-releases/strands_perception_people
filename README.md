@@ -1,3 +1,34 @@
+## strands_perception_people (indigo) - 0.0.13-1
+
+The packages in the `strands_perception_people` repository were released into the `indigo` distro by running `/usr/bin/bloom-release --non-interactive -t indigo -r indigo strands_perception_people` on `Wed, 18 Feb 2015 17:05:30 -0000`
+
+These packages were released:
+- `bayes_people_tracker`
+- `bayes_people_tracker_logging`
+- `detector_msg_to_pose_array`
+- `ground_plane_estimation`
+- `mdl_people_tracker`
+- `odometry_to_motion_matrix`
+- `perception_people_launch`
+- `strands_perception_people`
+- `upper_body_detector`
+- `visual_odometry`
+
+Version of package(s) in repository `strands_perception_people`:
+- upstream repository: https://github.com/strands-project/strands_perception_people.git
+- release repository: https://github.com/strands-project-releases/strands_perception_people.git
+- rosdistro version: `0.0.13-0`
+- old version: `0.0.13-0`
+- new version: `0.0.13-1`
+
+Versions of tools used:
+- bloom version: `0.5.12`
+- catkin_pkg version: `0.2.4`
+- rosdep version: `0.10.30`
+- rosdistro version: `0.3.5`
+- vcstools version: `0.1.35`
+
+
 ## strands_perception_people (hydro) - 0.0.14-0
 
 The packages in the `strands_perception_people` repository were released into the `hydro` distro by running `/usr/bin/bloom-release --non-interactive -t hydro -r hydro strands_perception_people` on `Sun, 23 Nov 2014 23:52:55 -0000`
