@@ -1,16 +1,10 @@
-strands_perception_people
-=========================
+# Human Trajectory
+This is a ROS package that extracts human poses information from bayes_people_tracker_logging and stitches each pose for each human together. For now, this package runs offline meaning that the poses are taken from a database. The trajectories are stored into a database and published via ROS message.
 
-Please see perception_people_launch/README.md for start-up information.
+Run this package by typing 
 
-This package contains the people perception pipeline. It is comprised of two detectors:
-* Upper body detector
-* Ground HOG feature detector
+```
+rosrun human_trajectory trajectory.py [publish_interval]
+```
 
-Two trackers:
-* People Tracker
-* Pedestrian Tracker (currently depricated)
-
-And a lot of utility and helper nodes. 
-
-Please refere to the READMEs in the specific packages.
+where ```[publish_interval]``` is the interval (in second) for between complete trajectories to be published in each published message. 
