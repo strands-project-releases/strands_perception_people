@@ -1,0 +1,12 @@
+Source: ros-indigo-detector-msg-to-pose-array
+Section: misc
+Priority: extra
+Maintainer: Christian Dondrup <cdondrup@lincoln.ac.uk>
+Build-Depends: debhelper (>= 9.0.0), ros-indigo-catkin, ros-indigo-genpy, ros-indigo-geometry-msgs, ros-indigo-roslib, ros-indigo-rospy, ros-indigo-rostopic
+Homepage: https://github.com/strands-project/strands_perception_people
+Standards-Version: 3.9.2
+
+Package: ros-indigo-detector-msg-to-pose-array
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-indigo-genpy, ros-indigo-geometry-msgs, ros-indigo-roslib, ros-indigo-rospy, ros-indigo-rostopic
+Description: The detector_msg_to_pose_array package
