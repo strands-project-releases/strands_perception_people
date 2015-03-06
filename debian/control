@@ -1,0 +1,12 @@
+Source: ros-indigo-opencv-warco
+Section: misc
+Priority: extra
+Maintainer: Lucas Beyer <beyer@vision.rwth-aachen.de>
+Build-Depends: debhelper (>= 9.0.0), ros-indigo-catkin, ros-indigo-cv-bridge
+Homepage: https://github.com/lucasb-eyer/opencv-warco
+Standards-Version: 3.9.2
+
+Package: ros-indigo-opencv-warco
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-indigo-cv-bridge
+Description: Library to perform head-pose classification using the WARCO method.
