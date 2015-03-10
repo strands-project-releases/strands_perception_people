@@ -4,6 +4,7 @@
 #include <ros/ros.h>
 #include <ros/time.h>
 #include <tf/transform_listener.h>
+#include <tf/transform_datatypes.h>
 #include <geometry_msgs/Quaternion.h>
 #include <geometry_msgs/PoseStamped.h>
 #include <geometry_msgs/PoseArray.h>
@@ -19,6 +20,8 @@
 #include <boost/uuid/uuid.hpp>
 #include <boost/uuid/uuid_generators.hpp>
 #include <boost/uuid/uuid_io.hpp>
+
+#include <bayes_tracking/BayesFilter/bayesFlt.hpp>
 
 #include <XmlRpcValue.h>
 
@@ -42,6 +45,7 @@ private:
     void trackingThread();
     void publishDetections(bayes_people_tracker::PeopleTracker msg);
     void publishDetections(geometry_msgs::PoseStamped msg);
+    void publishDetections(geometry_msgs::PoseArray msg);
     void publishDetections(people_msgs::People msg);
     void publishDetections(double time_sec,
                            geometry_msgs::Pose closest,
@@ -63,6 +67,31 @@ private:
         time += num_to_str<long>(id);
 
         return num_to_str<boost::uuids::uuid>(gen(time.c_str()));
+    }
+
+    geometry_msgs::Point generate_position(geometry_msgs::Point centre, double angle, double dx, double dy)
+    {
+      float s = sin(angle);
+      float c = cos(angle);
+
+      // rotate point
+      geometry_msgs::Point res;
+      res.x = dx * c - dy * s;
+      res.y = dx * s + dy * c;
+
+      // translate point back:
+      res.x += centre.x;
+      res.y += centre.y;
+      res.z  = centre.z;
+      return res;
+    }
+
+    geometry_msgs::Pose generate_extremity_position(geometry_msgs::Pose centre, double dx, double dy, double z) {
+        double angle = tf::getYaw(centre.orientation) + M_PI/2;
+        geometry_msgs::Point p = centre.position;
+        p.z = z;
+        centre.position = generate_position(p, angle, dx, dy);
+        return centre;
     }
 
     visualization_msgs::Marker createMarker(
@@ -135,11 +164,8 @@ private:
         color.r = 0.0F/255.0F;
         color.g = 0.0F/255.0F;
         color.b = 139.0F/255.0F;
-        pose.position.z = 0.4;
-        pose.position.x += 0.1;
-        legs.push_back(createMarker(idl, visualization_msgs::Marker::CYLINDER, action, pose, scale, color));
-        pose.position.x -= 0.2;
-        legs.push_back(createMarker(idr, visualization_msgs::Marker::CYLINDER, action, pose, scale, color));
+        legs.push_back(createMarker(idl, visualization_msgs::Marker::CYLINDER, action, generate_extremity_position(pose, 0.1, 0.0, 0.4), scale, color));
+        legs.push_back(createMarker(idr, visualization_msgs::Marker::CYLINDER, action, generate_extremity_position(pose, -0.1, 0.0, 0.4), scale, color));
         return legs;
     }
 
@@ -157,11 +183,8 @@ private:
         color.r = 139.0F/255.0F;
         color.g = 0.0F/255.0F;
         color.b = 0.0F/255.0F;
-        pose.position.z = 1.1;
-        pose.position.x += 0.2;
-        arms.push_back(createMarker(idl, visualization_msgs::Marker::CYLINDER, action, pose, scale, color));
-        pose.position.x -= 0.4;
-        arms.push_back(createMarker(idr, visualization_msgs::Marker::CYLINDER, action, pose, scale, color));
+        arms.push_back(createMarker(idl, visualization_msgs::Marker::CYLINDER, action, generate_extremity_position(pose, 0.2, 0.0, 1.1), scale, color));
+        arms.push_back(createMarker(idr, visualization_msgs::Marker::CYLINDER, action, generate_extremity_position(pose, -0.2, 0.0, 1.1), scale, color));
         return arms;
     }
 
@@ -187,6 +210,7 @@ private:
 
     ros::Publisher pub_detect;
     ros::Publisher pub_pose;
+    ros::Publisher pub_pose_array;
     ros::Publisher pub_people;
     ros::Publisher pub_marker;
     tf::TransformListener* listener;
@@ -198,7 +222,8 @@ private:
 
     boost::uuids::uuid dns_namespace_uuid;
 
-    SimpleTracking *st;
+    SimpleTracking<EKFilter> *ekf = NULL;
+    SimpleTracking<UKFilter> *ukf = NULL;
     std::map<std::pair<std::string, std::string>, ros::Subscriber> subscribers;
 };
 
