@@ -7,7 +7,6 @@ PeopleTracker::PeopleTracker() :
     ros::NodeHandle n;
 
     listener = new tf::TransformListener();
-    st = new SimpleTracking();
 
     startup_time = ros::Time::now().toSec();
     startup_time_str = num_to_str<double>(startup_time);
@@ -16,6 +15,7 @@ PeopleTracker::PeopleTracker() :
     std::string pta_topic;
     std::string pub_topic;
     std::string pub_topic_pose;
+    std::string pub_topic_pose_array;
     std::string pub_topic_people;
     std::string pub_marker_topic;
 
@@ -34,6 +34,8 @@ PeopleTracker::PeopleTracker() :
     pub_detect = n.advertise<bayes_people_tracker::PeopleTracker>(pub_topic.c_str(), 10, con_cb, con_cb);
     private_node_handle.param("pose", pub_topic_pose, std::string("/people_tracker/pose"));
     pub_pose = n.advertise<geometry_msgs::PoseStamped>(pub_topic_pose.c_str(), 10, con_cb, con_cb);
+    private_node_handle.param("pose_array", pub_topic_pose_array, std::string("/people_tracker/pose_array"));
+    pub_pose_array = n.advertise<geometry_msgs::PoseArray>(pub_topic_pose_array.c_str(), 10, con_cb, con_cb);
     private_node_handle.param("people", pub_topic_people, std::string("/people_tracker/people"));
     pub_people = n.advertise<people_msgs::People>(pub_topic_people.c_str(), 10, con_cb, con_cb);
     private_node_handle.param("marker", pub_marker_topic, std::string("/people_tracker/marker_array"));
@@ -45,18 +47,42 @@ PeopleTracker::PeopleTracker() :
 }
 
 void PeopleTracker::parseParams(ros::NodeHandle n) {
+    std::string filter;
+    n.getParam("filter_type", filter);
+    ROS_INFO_STREAM("Found filter type: " << filter);
+    if(filter == "EKF")
+        ekf = new SimpleTracking<EKFilter>();
+    else if(filter == "UKF")
+        ukf = new SimpleTracking<UKFilter>();
+    else {
+        ROS_FATAL_STREAM("Filter type " << filter << " is not specified. Unable to create the tracker. Please use either EKF or UKF.");
+        return;
+    }
+
+    XmlRpc::XmlRpcValue cv_noise;
+    n.getParam("cv_noise_params", cv_noise);
+    ROS_ASSERT(cv_noise.getType() == XmlRpc::XmlRpcValue::TypeStruct);
+    ROS_INFO_STREAM("Constant Velocity Model noise: " << cv_noise);
+    ekf == NULL ?
+        ukf->createConstantVelocityModel(cv_noise["x"], cv_noise["y"]) :
+        ekf->createConstantVelocityModel(cv_noise["x"], cv_noise["y"]);
+    ROS_INFO_STREAM("Created " << filter << " based tracker using constant velocity prediction model.");
+
     XmlRpc::XmlRpcValue detectors;
     n.getParam("detectors", detectors);
     ROS_ASSERT(detectors.getType() == XmlRpc::XmlRpcValue::TypeStruct);
     for(XmlRpc::XmlRpcValue::ValueStruct::const_iterator it = detectors.begin(); it != detectors.end(); ++it) {
         ROS_INFO_STREAM("Found detector: " << (std::string)(it->first) << " ==> " << detectors[it->first]);
         try {
-            st->addDetectorModel(it->first,
+            ekf == NULL ?
+                ukf->addDetectorModel(it->first,
                     detectors[it->first]["matching_algorithm"] == "NN" ? NN : detectors[it->first]["matching_algorithm"] == "NNJPDA" ? NNJPDA : throw(asso_exception()),
-                    detectors[it->first]["noise_model"]["velocity"]["x"],
-                    detectors[it->first]["noise_model"]["velocity"]["y"],
-                    detectors[it->first]["noise_model"]["position"]["x"],
-                    detectors[it->first]["noise_model"]["position"]["y"]);
+                    detectors[it->first]["cartesian_noise_params"]["x"],
+                    detectors[it->first]["cartesian_noise_params"]["y"]) :
+                ekf->addDetectorModel(it->first,
+                    detectors[it->first]["matching_algorithm"] == "NN" ? NN : detectors[it->first]["matching_algorithm"] == "NNJPDA" ? NNJPDA : throw(asso_exception()),
+                    detectors[it->first]["cartesian_noise_params"]["x"],
+                    detectors[it->first]["cartesian_noise_params"]["y"]);
         } catch (std::exception& e) {
             ROS_FATAL_STREAM(""
                     << e.what()
@@ -66,7 +92,7 @@ void PeopleTracker::parseParams(ros::NodeHandle n) {
                     << (std::string)(it->first)
                     << " to the tracker. Please use either NN or NNJPDA as association algorithms."
             );
-            continue;
+            return;
         }
         ros::Subscriber sub;
         subscribers[std::pair<std::string, std::string>(it->first, detectors[it->first]["topic"])] = sub;
@@ -78,7 +104,7 @@ void PeopleTracker::trackingThread() {
     ros::Rate fps(30);
     double time_sec = 0.0;
     while(ros::ok()) {
-        std::map<long, std::vector<geometry_msgs::Pose> > ppl = st->track(&time_sec);
+        std::map<long, std::vector<geometry_msgs::Pose> > ppl = ekf == NULL ? ukf->track(&time_sec) : ekf->track(&time_sec);
         if(ppl.size()) {
             geometry_msgs::Pose closest_person_point;
             std::vector<geometry_msgs::Pose> pose;
@@ -139,6 +165,11 @@ void PeopleTracker::publishDetections(
     pose.pose = closest;
     publishDetections(pose);
 
+    geometry_msgs::PoseArray poses;
+    poses.header = result.header;
+    poses.poses = ppl;
+    publishDetections(poses);
+
     people_msgs::People people;
     people.header = result.header;
     for(int i = 0; i < ppl.size(); i++) {
@@ -160,6 +191,10 @@ void PeopleTracker::publishDetections(bayes_people_tracker::PeopleTracker msg) {
 
 void PeopleTracker::publishDetections(geometry_msgs::PoseStamped msg) {
     pub_pose.publish(msg);
+}
+
+void PeopleTracker::publishDetections(geometry_msgs::PoseArray msg) {
+    pub_pose_array.publish(msg);
 }
 
 void PeopleTracker::publishDetections(people_msgs::People msg) {
@@ -246,17 +281,22 @@ void PeopleTracker::detectorCallback(const geometry_msgs::PoseArray::ConstPtr &p
             ppl.push_back(poseInTargetCoords.pose.position);
 
     }
-    if(ppl.size())
-        st->addObservation(detector, ppl, pta->header.stamp.toSec());
+    if(ppl.size()) {
+        ekf == NULL ?
+            ukf->addObservation(detector, ppl, pta->header.stamp.toSec()) :
+            ekf->addObservation(detector, ppl, pta->header.stamp.toSec());
+    }
 }
 
 // Connection callback that unsubscribes from the tracker if no one is subscribed.
 void PeopleTracker::connectCallback(ros::NodeHandle &n) {
     bool loc = pub_detect.getNumSubscribers();
     bool markers = pub_marker.getNumSubscribers();
-    bool test_markers = pub_marker.getNumSubscribers();
+    bool people = pub_people.getNumSubscribers();
+    bool pose = pub_pose.getNumSubscribers();
+    bool pose_array = pub_pose_array.getNumSubscribers();
     std::map<std::pair<std::string, std::string>, ros::Subscriber>::const_iterator it;
-    if(!loc && !markers && !test_markers) {
+    if(!loc && !markers && !people && !pose && !pose_array) {
         ROS_DEBUG("Pedestrian Localisation: No subscribers. Unsubscribing.");
         for(it = subscribers.begin(); it != subscribers.end(); ++it)
             const_cast<ros::Subscriber&>(it->second).shutdown();
