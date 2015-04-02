@@ -1,17 +1,15 @@
 cmake_minimum_required(VERSION 2.8.3)
-project(bayes_people_tracker_logging)
+project(vision_people_logging)
 
 ## Find catkin macros and libraries
 ## if COMPONENTS list like find_package(catkin REQUIRED COMPONENTS xyz)
 ## is used, also find other catkin packages
 find_package(catkin REQUIRED COMPONENTS
-  bayes_people_tracker
   geometry_msgs
   message_filters
   message_generation
   mongodb_store
   rospy
-  mdl_people_tracker
   tf
   upper_body_detector
 )
@@ -21,18 +19,16 @@ find_package(catkin REQUIRED COMPONENTS
 ################################################
 
 add_message_files(
-    FILES
-    Logging.msg
-    PeopleTrackerLogging.msg
+  FILES
+    LoggingUBD.msg
 )
 
 generate_messages(
-    DEPENDENCIES
-    bayes_people_tracker
+  DEPENDENCIES
     geometry_msgs
+    sensor_msgs
     upper_body_detector
     std_msgs
-    mdl_people_tracker
 )
 
 ###################################
@@ -40,10 +36,9 @@ generate_messages(
 ###################################
 catkin_package(
   CATKIN_DEPENDS
-    bayes_people_tracker
     geometry_msgs
+    sensor_msgs
     mongodb_store
-    mdl_people_tracker
     tf
     upper_body_detector
 )
@@ -53,7 +48,7 @@ catkin_package(
 #############
 
 install(PROGRAMS
-  scripts/save_locations.py
+  scripts/save_ubd.py
   DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION}
 )
 
