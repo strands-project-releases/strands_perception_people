@@ -1,0 +1,130 @@
+ros-indigo-vision-people-logging (1.1.0-0trusty) trusty; urgency=high
+
+  * Increase slop because UBD publishes at 10hz.
+  * Make use of the logging manager in vision_people_logging.
+  * Added node for logging UpperBodyDetections (UBDs).
+  * Contributors: lucasb-eyer
+
+ -- Lucas Beyer <beyer@vision.rwth-aachen.de>  Thu, 02 Apr 2015 00:00:00 -0000
+
+ros-indigo-vision-people-logging (1.0.0-0trusty) trusty; urgency=high
+
+
+
+ -- Lucas Beyer <beyer@vision.rwth-aachen.de>  Tue, 10 Mar 2015 00:00:00 -0000
+
+ros-indigo-vision-people-logging (0.1.4-0trusty) trusty; urgency=high
+
+
+
+ -- Lucas Beyer <beyer@vision.rwth-aachen.de>  Fri, 06 Mar 2015 00:00:00 -0000
+
+ros-indigo-vision-people-logging (0.1.3-0trusty) trusty; urgency=high
+
+
+
+ -- Lucas Beyer <beyer@vision.rwth-aachen.de>  Wed, 25 Feb 2015 00:00:00 -0000
+
+ros-indigo-vision-people-logging (0.1.2-0trusty) trusty; urgency=high
+
+
+
+ -- Lucas Beyer <beyer@vision.rwth-aachen.de>  Fri, 20 Feb 2015 00:00:00 -0000
+
+ros-indigo-vision-people-logging (0.1.1-0trusty) trusty; urgency=high
+
+
+
+ -- Lucas Beyer <beyer@vision.rwth-aachen.de>  Wed, 18 Feb 2015 18:37:00 -0000
+
+ros-indigo-vision-people-logging (0.1.0-0trusty) trusty; urgency=high
+
+
+
+ -- Lucas Beyer <beyer@vision.rwth-aachen.de>  Wed, 18 Feb 2015 16:59:00 -0000
+
+ros-indigo-vision-people-logging (0.0.14-0trusty) trusty; urgency=high
+
+
+
+ -- Lucas Beyer <beyer@vision.rwth-aachen.de>  Sun, 23 Nov 2014 00:00:00 -0000
+
+ros-indigo-vision-people-logging (0.0.13-0trusty) trusty; urgency=high
+
+
+
+ -- Lucas Beyer <beyer@vision.rwth-aachen.de>  Fri, 31 Oct 2014 16:14:00 -0000
+
+ros-indigo-vision-people-logging (0.0.12-0trusty) trusty; urgency=high
+
+
+
+ -- Lucas Beyer <beyer@vision.rwth-aachen.de>  Fri, 31 Oct 2014 16:07:00 -0000
+
+ros-indigo-vision-people-logging (0.0.11-0trusty) trusty; urgency=high
+
+
+
+ -- Lucas Beyer <beyer@vision.rwth-aachen.de>  Thu, 30 Oct 2014 11:18:00 -0000
+
+ros-indigo-vision-people-logging (0.0.10-0trusty) trusty; urgency=high
+
+
+
+ -- Lucas Beyer <beyer@vision.rwth-aachen.de>  Thu, 30 Oct 2014 10:19:00 -0000
+
+ros-indigo-vision-people-logging (0.0.9-0trusty) trusty; urgency=high
+
+
+
+ -- Lucas Beyer <beyer@vision.rwth-aachen.de>  Thu, 30 Oct 2014 09:52:00 -0000
+
+ros-indigo-vision-people-logging (0.0.8-0trusty) trusty; urgency=high
+
+
+
+ -- Lucas Beyer <beyer@vision.rwth-aachen.de>  Thu, 30 Oct 2014 09:32:00 -0000
+
+ros-indigo-vision-people-logging (0.0.7-0trusty) trusty; urgency=high
+
+
+
+ -- Lucas Beyer <beyer@vision.rwth-aachen.de>  Wed, 29 Oct 2014 20:40:00 -0000
+
+ros-indigo-vision-people-logging (0.0.6-0trusty) trusty; urgency=high
+
+
+
+ -- Lucas Beyer <beyer@vision.rwth-aachen.de>  Wed, 29 Oct 2014 20:32:00 -0000
+
+ros-indigo-vision-people-logging (0.0.5-0trusty) trusty; urgency=high
+
+
+
+ -- Lucas Beyer <beyer@vision.rwth-aachen.de>  Wed, 29 Oct 2014 18:30:00 -0000
+
+ros-indigo-vision-people-logging (0.0.4-0trusty) trusty; urgency=high
+
+
+
+ -- Lucas Beyer <beyer@vision.rwth-aachen.de>  Wed, 29 Oct 2014 18:22:00 -0000
+
+ros-indigo-vision-people-logging (0.0.3-0trusty) trusty; urgency=high
+
+
+
+ -- Lucas Beyer <beyer@vision.rwth-aachen.de>  Thu, 23 Oct 2014 00:00:00 -0000
+
+ros-indigo-vision-people-logging (0.0.2-0trusty) trusty; urgency=high
+
+
+
+ -- Lucas Beyer <beyer@vision.rwth-aachen.de>  Sat, 18 Oct 2014 17:39:00 -0000
+
+ros-indigo-vision-people-logging (0.0.1-0trusty) trusty; urgency=high
+
+
+
+ -- Lucas Beyer <beyer@vision.rwth-aachen.de>  Sat, 18 Oct 2014 17:28:00 -0000
+
+
