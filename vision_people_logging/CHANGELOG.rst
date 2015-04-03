@@ -2,6 +2,9 @@
 Changelog for package vision_people_logging
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+1.1.1 (2015-04-03)
+------------------
+
 1.1.0 (2015-04-02)
 ------------------
 * Increase slop because UBD publishes at 10hz.
