@@ -2,6 +2,9 @@
 Changelog for package perception_people_launch
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+1.1.1 (2015-04-03)
+------------------
+
 1.0.0 (2015-03-10)
 ------------------
 * * Publishing a pose array for all detected people to have more generic output
