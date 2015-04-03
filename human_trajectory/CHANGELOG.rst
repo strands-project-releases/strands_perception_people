@@ -2,6 +2,9 @@
 Changelog for package human_trajectory
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+1.1.1 (2015-04-03)
+------------------
+
 1.0.0 (2015-03-10)
 ------------------
 * keep visualization for 1 min
