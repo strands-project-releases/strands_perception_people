@@ -1,0 +1,147 @@
+ros-indigo-opencv-warco (1.1.2-0trusty) trusty; urgency=high
+
+
+
+ -- Lucas Beyer <beyer@vision.rwth-aachen.de>  Tue, 07 Apr 2015 00:00:00 -0000
+
+ros-indigo-opencv-warco (1.1.1-0trusty) trusty; urgency=high
+
+
+
+ -- Lucas Beyer <beyer@vision.rwth-aachen.de>  Fri, 03 Apr 2015 00:00:00 -0000
+
+ros-indigo-opencv-warco (1.0.0-0trusty) trusty; urgency=high
+
+
+
+ -- Lucas Beyer <beyer@vision.rwth-aachen.de>  Tue, 10 Mar 2015 00:00:00 -0000
+
+ros-indigo-opencv-warco (0.1.4-0trusty) trusty; urgency=high
+
+  * Added missing include and linking. These were necessary to compile under OS X.
+  * Contributors: Nick Hawes
+
+ -- Lucas Beyer <beyer@vision.rwth-aachen.de>  Fri, 06 Mar 2015 00:00:00 -0000
+
+ros-indigo-opencv-warco (0.1.3-0trusty) trusty; urgency=high
+
+
+
+ -- Lucas Beyer <beyer@vision.rwth-aachen.de>  Wed, 25 Feb 2015 00:00:00 -0000
+
+ros-indigo-opencv-warco (0.1.1-0trusty) trusty; urgency=high
+
+  * Merge pull request #132 <https://github.com/strands-project/strands_perception_people/issues/132> from cdondrup/opencv_warco
+    Refactoring opencv_warco to enable build from install and devel
+  * Refactoring opencv_warco to be able to build strands_head_orientation from install and devel.
+  * Contributors: Christian Dondrup
+
+ -- Lucas Beyer <beyer@vision.rwth-aachen.de>  Wed, 18 Feb 2015 00:00:00 -0000
+
+ros-indigo-opencv-warco (0.1.0-0trusty) trusty; urgency=high
+
+  * Setting correct version number. The changelogs will be regenerated because the ones from the release branch would not be consistent with the changes made in the devel branch.
+  * Started to make opencv_warco installable
+  * Contributors: Christian Dondrup
+
+ -- Lucas Beyer <beyer@vision.rwth-aachen.de>  Wed, 18 Feb 2015 00:00:00 -0000
+
+ros-indigo-opencv-warco (0.0.14-0trusty) trusty; urgency=high
+
+  * Merging in latest changes and removed some artifacts of that.
+  * Removed packages that are not supposed to be released.
+  * Contributors: Christian Dondrup
+
+ -- Lucas Beyer <beyer@vision.rwth-aachen.de>  Sun, 23 Nov 2014 00:00:00 -0000
+
+ros-indigo-opencv-warco (0.0.13-0trusty) trusty; urgency=high
+
+  * Rebasing latest changes and removing artifacts.
+  * Removed packages that are not supposed to be released.
+  * Contributors: Christian Dondrup
+
+ -- Lucas Beyer <beyer@vision.rwth-aachen.de>  Fri, 31 Oct 2014 16:14:00 -0000
+
+ros-indigo-opencv-warco (0.0.12-0trusty) trusty; urgency=high
+
+  * Merging in latest changes and removed some artifacts of that.
+  * Removed packages that are not supposed to be released.
+  * Updated opencv-warco version.
+  * Contributors: Christian Dondrup, lucasb-eyer
+
+ -- Lucas Beyer <beyer@vision.rwth-aachen.de>  Fri, 31 Oct 2014 16:07:00 -0000
+
+ros-indigo-opencv-warco (0.0.11-0trusty) trusty; urgency=high
+
+
+
+ -- Lucas Beyer <beyer@vision.rwth-aachen.de>  Thu, 30 Oct 2014 11:18:00 -0000
+
+ros-indigo-opencv-warco (0.0.10-0trusty) trusty; urgency=high
+
+
+
+ -- Lucas Beyer <beyer@vision.rwth-aachen.de>  Thu, 30 Oct 2014 10:19:00 -0000
+
+ros-indigo-opencv-warco (0.0.9-0trusty) trusty; urgency=high
+
+
+
+ -- Lucas Beyer <beyer@vision.rwth-aachen.de>  Thu, 30 Oct 2014 09:52:00 -0000
+
+ros-indigo-opencv-warco (0.0.8-0trusty) trusty; urgency=high
+
+
+
+ -- Lucas Beyer <beyer@vision.rwth-aachen.de>  Thu, 30 Oct 2014 09:32:00 -0000
+
+ros-indigo-opencv-warco (0.0.7-0trusty) trusty; urgency=high
+
+
+
+ -- Lucas Beyer <beyer@vision.rwth-aachen.de>  Wed, 29 Oct 2014 20:40:00 -0000
+
+ros-indigo-opencv-warco (0.0.6-0trusty) trusty; urgency=high
+
+
+
+ -- Lucas Beyer <beyer@vision.rwth-aachen.de>  Wed, 29 Oct 2014 20:32:00 -0000
+
+ros-indigo-opencv-warco (0.0.5-0trusty) trusty; urgency=high
+
+
+
+ -- Lucas Beyer <beyer@vision.rwth-aachen.de>  Wed, 29 Oct 2014 18:30:00 -0000
+
+ros-indigo-opencv-warco (0.0.4-0trusty) trusty; urgency=high
+
+
+
+ -- Lucas Beyer <beyer@vision.rwth-aachen.de>  Wed, 29 Oct 2014 18:22:00 -0000
+
+ros-indigo-opencv-warco (0.0.3-0trusty) trusty; urgency=high
+
+  * Added LICENSE files. Fixes #101 <https://github.com/strands-project/strands_perception_people/issues/101>
+  * Contributors: Lucas Beyer
+
+ -- Lucas Beyer <beyer@vision.rwth-aachen.de>  Thu, 23 Oct 2014 00:00:00 -0000
+
+ros-indigo-opencv-warco (0.0.2-0trusty) trusty; urgency=high
+
+
+
+ -- Lucas Beyer <beyer@vision.rwth-aachen.de>  Sat, 18 Oct 2014 17:39:00 -0000
+
+ros-indigo-opencv-warco (0.0.1-0trusty) trusty; urgency=high
+
+  * Removed packages that are not supposed to be released.
+  * Revert to downscaling the images to 50x50.
+    Arbitrary patch-sizes don't make sense when the size of the filters in
+    the bank is not adapted.
+  * Shame on me!
+  * Initial opencv-warco based head pose estimator.
+  * Contributors: Christian Dondrup, lucasb-eyer
+
+ -- Lucas Beyer <beyer@vision.rwth-aachen.de>  Sat, 18 Oct 2014 17:28:00 -0000
+
+
