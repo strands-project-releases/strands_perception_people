@@ -1,0 +1,12 @@
+Source: ros-indigo-perception-people-launch
+Section: misc
+Priority: extra
+Maintainer: Christian Dondrup <cdondrup@lincoln.ac.uk>
+Build-Depends: debhelper (>= 9.0.0), ros-indigo-catkin
+Homepage: https://github.com/strands-project/strands_perception_people
+Standards-Version: 3.9.2
+
+Package: ros-indigo-perception-people-launch
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-indigo-bayes-people-tracker, ros-indigo-bayes-people-tracker-logging, ros-indigo-detector-msg-to-pose-array, ros-indigo-ground-plane-estimation, ros-indigo-leg-detector, ros-indigo-mdl-people-tracker, ros-indigo-odometry-to-motion-matrix, ros-indigo-people-msgs, ros-indigo-upper-body-detector
+Description: The perception_people_launch package
