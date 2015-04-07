@@ -1,19 +1,16 @@
-strands_perception_people
-=========================
+## Odometry to motion_matrix package
+This packge contains a tool for the conversion of the robots odometry to a motion matrix to substitude the visual odometry.
 
-Please see perception_people_launch/README.md for start-up information.
+All the information given on how to run the nodes should only be used if you need to run them seperately. In normal cases please refer to the `perception_people_launch` package to start the whole perception pipeline.
 
-This package contains the people perception pipeline. It is comprised of two detectors:
-* Upper body detector
-* Leg Detector: http://wiki.ros.org/leg_detector
+### odom2visual
+This node creates a motion matrix from the robots odometry using the Eigen library to substitude the visual odometry.
 
-Depricated and moved to attic branch:
-* Ground HOG feature detector
+Run with:
 
-Two trackers:
-* Bayesian People Tracker
-* Pedestrian Tracker (currently depricated)
+`roslaunch odometry_to_motion_matrix odom2visual.launch`
 
-And a lot of utility and helper nodes. See https://www.youtube.com/watch?v=zdnvhQU1YNo for a concise explanation. 
+Parameters:
+* `odom`: _Default: /odom_ The topic on which the robots odometry is published
+* `motion_parameters`: _Default: /visual_odometry/motion_matrix_ The topic on which the resulting motion matrix is published
 
-Please refere to the READMEs in the specific packages.
