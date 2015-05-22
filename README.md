@@ -1,19 +1,17 @@
-strands_perception_people
-=========================
+# Vision/People Logging package
 
-Please see perception_people_launch/README.md for start-up information.
+This packge contains a logging node to save the detections to the message_store.
 
-This package contains the people perception pipeline. It is comprised of two detectors:
-* Upper body detector
-* Leg Detector: http://wiki.ros.org/leg_detector
+All the information given on how to run the nodes should only be used if you need to run them seperately. In normal cases please refer to the `perception_people_launch` package to start the whole perception pipeline.
 
-Depricated and moved to attic branch:
-* Ground HOG feature detector
+## Logging
 
-Two trackers:
-* Bayesian People Tracker
-* Pedestrian Tracker (currently depricated)
+This node uses the `LoggingUBD.msg` to save the detected people together with the robots pose and the tf transform which can be used to create the real world coordinates in the message store.
 
-And a lot of utility and helper nodes. See https://www.youtube.com/watch?v=zdnvhQU1YNo for a concise explanation. 
+Run with:
 
-Please refere to the READMEs in the specific packages.
+`roslaunch vision_people_logging logging_ubd.launch`
+
+Parameters:
+* `log`: _Default: true_ This convenience parameter allows to start the whole system without logging the data
+
