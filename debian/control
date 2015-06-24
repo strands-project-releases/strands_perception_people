@@ -1,0 +1,12 @@
+Source: ros-indigo-odometry-to-motion-matrix
+Section: misc
+Priority: extra
+Maintainer: Christian Dondrup <cdondrup@lincoln.ac.uk>
+Build-Depends: debhelper (>= 9.0.0), libeigen3-dev, ros-indigo-catkin, ros-indigo-cmake-modules, ros-indigo-eigen-conversions, ros-indigo-nav-msgs, ros-indigo-roscpp, ros-indigo-tf, ros-indigo-tf-conversions, ros-indigo-visual-odometry
+Homepage: https://github.com/strands-project/strands_perception_people
+Standards-Version: 3.9.2
+
+Package: ros-indigo-odometry-to-motion-matrix
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, libeigen3-dev, ros-indigo-eigen-conversions, ros-indigo-nav-msgs, ros-indigo-roscpp, ros-indigo-tf, ros-indigo-tf-conversions, ros-indigo-visual-odometry
+Description: The odometry_to_motion_matrix package
