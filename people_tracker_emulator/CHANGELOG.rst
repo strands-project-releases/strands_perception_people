@@ -2,6 +2,9 @@
 Changelog for package people_tracker_emulator
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+1.1.8 (2015-09-03)
+------------------
+
 1.1.7 (2015-08-25)
 ------------------
 * Adding an emulator for the bayes people tracker

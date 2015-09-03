@@ -2,6 +2,9 @@
 Changelog for package vision_people_logging
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+1.1.8 (2015-09-03)
+------------------
+
 1.1.6 (2015-06-24)
 ------------------
 * Revert "Fixing the wrong translation and rotation for the tf transformation"
