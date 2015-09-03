@@ -1,20 +1,19 @@
-# Human Trajectory
-This is a ROS package that extracts human poses information from people tracker and stitches each pose for each human together. This package can be run online by subscribing to /people_tracker/positions or offline by retrieving human poses from either perception_people collection or people_trajectory collection.
+strands_perception_people
+=========================
 
-Run this package by typing 
+Please see perception_people_launch/README.md for start-up information.
 
-```
-roslaunch human_trajectory human_trajectory.launch
-```
-The online stitching provides both mini batch trajectories messages where trajectories are split into chunked and complete batch trajectories which only publishes complete trajectory messages when the persons are not detected anymore. 
+This package contains the people perception pipeline. It is comprised of two detectors:
+* Upper body detector
+* Leg Detector: http://wiki.ros.org/leg_detector
 
-## Parameters
-* `with_logging_manager`: the option (true/false) to subscribe to logging manager and get
-  permission to store obtained data
-* `path_visualisation`:  the option to visualise each detected trajectory in rviz using Path. However, it only works for online construction. 
-* `online_construction`: the option (true/false) to stitch human poses online from other packages (bayes_people_tracker) or offline from perception_people or people_trajectory collection in mongodb.
-* `tracker_topic`: the name of the people tracker topic, default is /people_tracker/positions
-* `logging_manager_topic`: the name of the logging manager topic, default is /logging_manager/log_stamped
+Depricated and moved to attic branch:
+* Ground HOG feature detector
 
-## Note
-The offline retrieval limits the number of trajectories obtained from mongodb to 10000 trajectories. To work around the limitation, OfflineTrajectories class provides a query that can be passed to mongodb to obtain specific trajectories. 
+Two trackers:
+* Bayesian People Tracker
+* Pedestrian Tracker (currently depricated)
+
+And a lot of utility and helper nodes. See https://www.youtube.com/watch?v=zdnvhQU1YNo for a concise explanation. 
+
+Please refere to the READMEs in the specific packages.
