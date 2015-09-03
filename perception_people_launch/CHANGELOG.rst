@@ -2,6 +2,13 @@
 Changelog for package perception_people_launch
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+1.1.8 (2015-09-03)
+------------------
+* Adding parameter description to README
+* Fixing config file location
+* Adding laser filters to the launch file to get rid of false psoitives by the leg detector.
+* Contributors: Christian Dondrup
+
 1.1.6 (2015-06-24)
 ------------------
 * 1.1.5
