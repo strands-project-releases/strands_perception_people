@@ -1,0 +1,208 @@
+ros-indigo-people-tracker-filter (1.2.0-0trusty) trusty; urgency=high
+
+  * Updating CMakeLists and package.xml
+  * Adding velocities to filter.
+  * Actually publishing people message now.
+  * Removing occupancy grid utils dependency by copying the relevant functions.
+  * Updating launch file to make the map server optional. Also adding more arguments.
+  * 
+    
+      * People tracker now has the same functionality as all the other components meaning that it lies dormant until someone subscribes to any of its topics.
+      * Filter now filters all the people_tracker topics.
+      * Using new people_marker class to create human markers for filtered tracks.
+    
+  * Adding try catch for cell out of bounds
+  * Adding people tracker filter based on a map.
+  * Contributors: Christian Dondrup
+  * Updating CMakeLists and package.xml
+  * Adding velocities to filter.
+  * Actually publishing people message now.
+  * Removing occupancy grid utils dependency by copying the relevant functions.
+  * Updating launch file to make the map server optional. Also adding more arguments.
+  * 
+    
+      * People tracker now has the same functionality as all the other components meaning that it lies dormant until someone subscribes to any of its topics.
+      * Filter now filters all the people_tracker topics.
+      * Using new people_marker class to create human markers for filtered tracks.
+    
+  * Adding try catch for cell out of bounds
+  * Adding people tracker filter based on a map.
+  * Contributors: Christian Dondrup
+
+ -- Christian Dondrup <cdondrup@lincoln.ac.uk>  Wed, 11 Nov 2015 00:00:00 -0000
+
+ros-indigo-people-tracker-filter (1.1.8-0trusty) trusty; urgency=high
+
+
+
+ -- Christian Dondrup <cdondrup@lincoln.ac.uk>  Thu, 03 Sep 2015 00:00:00 -0000
+
+ros-indigo-people-tracker-filter (1.1.7-0trusty) trusty; urgency=high
+
+
+
+ -- Christian Dondrup <cdondrup@lincoln.ac.uk>  Tue, 25 Aug 2015 00:00:00 -0000
+
+ros-indigo-people-tracker-filter (1.1.6-0trusty) trusty; urgency=high
+
+
+
+ -- Christian Dondrup <cdondrup@lincoln.ac.uk>  Wed, 24 Jun 2015 00:00:00 -0000
+
+ros-indigo-people-tracker-filter (1.1.5-0trusty) trusty; urgency=high
+
+
+
+ -- Christian Dondrup <cdondrup@lincoln.ac.uk>  Fri, 22 May 2015 00:00:00 -0000
+
+ros-indigo-people-tracker-filter (1.1.4-0trusty) trusty; urgency=high
+
+
+
+ -- Christian Dondrup <cdondrup@lincoln.ac.uk>  Sun, 10 May 2015 00:00:00 -0000
+
+ros-indigo-people-tracker-filter (1.1.3-0trusty) trusty; urgency=high
+
+
+
+ -- Christian Dondrup <cdondrup@lincoln.ac.uk>  Fri, 10 Apr 2015 00:00:00 -0000
+
+ros-indigo-people-tracker-filter (1.1.2-0trusty) trusty; urgency=high
+
+
+
+ -- Christian Dondrup <cdondrup@lincoln.ac.uk>  Tue, 07 Apr 2015 00:00:00 -0000
+
+ros-indigo-people-tracker-filter (1.1.1-0trusty) trusty; urgency=high
+
+
+
+ -- Christian Dondrup <cdondrup@lincoln.ac.uk>  Fri, 03 Apr 2015 00:00:00 -0000
+
+ros-indigo-people-tracker-filter (1.1.0-0trusty) trusty; urgency=high
+
+
+
+ -- Christian Dondrup <cdondrup@lincoln.ac.uk>  Thu, 02 Apr 2015 00:00:00 -0000
+
+ros-indigo-people-tracker-filter (1.0.0-0trusty) trusty; urgency=high
+
+
+
+ -- Christian Dondrup <cdondrup@lincoln.ac.uk>  Tue, 10 Mar 2015 00:00:00 -0000
+
+ros-indigo-people-tracker-filter (0.1.4-0trusty) trusty; urgency=high
+
+
+
+ -- Christian Dondrup <cdondrup@lincoln.ac.uk>  Fri, 06 Mar 2015 00:00:00 -0000
+
+ros-indigo-people-tracker-filter (0.1.3-0trusty) trusty; urgency=high
+
+
+
+ -- Christian Dondrup <cdondrup@lincoln.ac.uk>  Wed, 25 Feb 2015 00:00:00 -0000
+
+ros-indigo-people-tracker-filter (0.1.2-0trusty) trusty; urgency=high
+
+
+
+ -- Christian Dondrup <cdondrup@lincoln.ac.uk>  Fri, 20 Feb 2015 00:00:00 -0000
+
+ros-indigo-people-tracker-filter (0.1.1-0trusty) trusty; urgency=high
+
+
+
+ -- Christian Dondrup <cdondrup@lincoln.ac.uk>  Wed, 18 Feb 2015 18:37:00 -0000
+
+ros-indigo-people-tracker-filter (0.1.0-0trusty) trusty; urgency=high
+
+
+
+ -- Christian Dondrup <cdondrup@lincoln.ac.uk>  Wed, 18 Feb 2015 16:59:00 -0000
+
+ros-indigo-people-tracker-filter (0.0.14-0trusty) trusty; urgency=high
+
+
+
+ -- Christian Dondrup <cdondrup@lincoln.ac.uk>  Sun, 23 Nov 2014 00:00:00 -0000
+
+ros-indigo-people-tracker-filter (0.0.13-0trusty) trusty; urgency=high
+
+
+
+ -- Christian Dondrup <cdondrup@lincoln.ac.uk>  Fri, 31 Oct 2014 16:14:00 -0000
+
+ros-indigo-people-tracker-filter (0.0.12-0trusty) trusty; urgency=high
+
+
+
+ -- Christian Dondrup <cdondrup@lincoln.ac.uk>  Fri, 31 Oct 2014 16:07:00 -0000
+
+ros-indigo-people-tracker-filter (0.0.11-0trusty) trusty; urgency=high
+
+
+
+ -- Christian Dondrup <cdondrup@lincoln.ac.uk>  Thu, 30 Oct 2014 11:18:00 -0000
+
+ros-indigo-people-tracker-filter (0.0.10-0trusty) trusty; urgency=high
+
+
+
+ -- Christian Dondrup <cdondrup@lincoln.ac.uk>  Thu, 30 Oct 2014 10:19:00 -0000
+
+ros-indigo-people-tracker-filter (0.0.9-0trusty) trusty; urgency=high
+
+
+
+ -- Christian Dondrup <cdondrup@lincoln.ac.uk>  Thu, 30 Oct 2014 09:52:00 -0000
+
+ros-indigo-people-tracker-filter (0.0.8-0trusty) trusty; urgency=high
+
+
+
+ -- Christian Dondrup <cdondrup@lincoln.ac.uk>  Thu, 30 Oct 2014 09:32:00 -0000
+
+ros-indigo-people-tracker-filter (0.0.7-0trusty) trusty; urgency=high
+
+
+
+ -- Christian Dondrup <cdondrup@lincoln.ac.uk>  Wed, 29 Oct 2014 20:40:00 -0000
+
+ros-indigo-people-tracker-filter (0.0.6-0trusty) trusty; urgency=high
+
+
+
+ -- Christian Dondrup <cdondrup@lincoln.ac.uk>  Wed, 29 Oct 2014 20:32:00 -0000
+
+ros-indigo-people-tracker-filter (0.0.5-0trusty) trusty; urgency=high
+
+
+
+ -- Christian Dondrup <cdondrup@lincoln.ac.uk>  Wed, 29 Oct 2014 18:30:00 -0000
+
+ros-indigo-people-tracker-filter (0.0.4-0trusty) trusty; urgency=high
+
+
+
+ -- Christian Dondrup <cdondrup@lincoln.ac.uk>  Wed, 29 Oct 2014 18:22:00 -0000
+
+ros-indigo-people-tracker-filter (0.0.3-0trusty) trusty; urgency=high
+
+
+
+ -- Christian Dondrup <cdondrup@lincoln.ac.uk>  Thu, 23 Oct 2014 00:00:00 -0000
+
+ros-indigo-people-tracker-filter (0.0.2-0trusty) trusty; urgency=high
+
+
+
+ -- Christian Dondrup <cdondrup@lincoln.ac.uk>  Sat, 18 Oct 2014 17:39:00 -0000
+
+ros-indigo-people-tracker-filter (0.0.1-0trusty) trusty; urgency=high
+
+
+
+ -- Christian Dondrup <cdondrup@lincoln.ac.uk>  Sat, 18 Oct 2014 17:28:00 -0000
+
+
