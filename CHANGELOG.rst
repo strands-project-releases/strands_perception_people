@@ -2,6 +2,9 @@
 Changelog for package bayes_people_tracker_logging
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+1.2.1 (2016-01-28)
+------------------
+
 1.2.0 (2015-11-11)
 ------------------
 * Logging component logs the filtered output now.
