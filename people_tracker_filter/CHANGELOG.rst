@@ -2,6 +2,9 @@
 Changelog for package people_tracker_filter
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+1.2.1 (2016-01-28)
+------------------
+
 1.2.0 (2015-11-11)
 ------------------
 * Updating CMakeLists and package.xml
