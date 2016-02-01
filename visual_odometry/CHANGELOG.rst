@@ -2,6 +2,9 @@
 Changelog for package visual_odometry
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+1.3.0 (2016-02-01)
+------------------
+
 1.2.1 (2016-01-28)
 ------------------
 * Changing default topic name for use with openni2
