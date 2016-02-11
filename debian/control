@@ -1,0 +1,12 @@
+Source: ros-indigo-wheelchair-detector
+Section: misc
+Priority: extra
+Maintainer: hermans <hermans@vision.rwth-aachen.de>
+Build-Depends: debhelper (>= 9.0.0), ros-indigo-catkin, ros-indigo-geometry-msgs, ros-indigo-rospy, ros-indigo-sensor-msgs
+Homepage: 
+Standards-Version: 3.9.2
+
+Package: ros-indigo-wheelchair-detector
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-indigo-geometry-msgs, ros-indigo-rospy, ros-indigo-sensor-msgs
+Description: The wheelchair_detector package
