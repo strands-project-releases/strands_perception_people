@@ -1,0 +1,12 @@
+Source: ros-indigo-people-tracker-filter
+Section: misc
+Priority: extra
+Maintainer: Christian Dondrup <cdondrup@lincoln.ac.uk>
+Build-Depends: debhelper (>= 9.0.0), ros-indigo-bayes-people-tracker, ros-indigo-catkin, ros-indigo-geometry-msgs, ros-indigo-message-filters, ros-indigo-nav-msgs, ros-indigo-people-msgs, ros-indigo-roscpp, ros-indigo-std-msgs, ros-indigo-tf, ros-indigo-visualization-msgs
+Homepage: 
+Standards-Version: 3.9.2
+
+Package: ros-indigo-people-tracker-filter
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-indigo-bayes-people-tracker, ros-indigo-geometry-msgs, ros-indigo-message-filters, ros-indigo-nav-msgs, ros-indigo-people-msgs, ros-indigo-roscpp, ros-indigo-std-msgs, ros-indigo-tf, ros-indigo-visualization-msgs
+Description: The people_tracker_filter package
