@@ -1,31 +1,16 @@
-strands_perception_people
-=========================
+# Wheelchair detector
 
-Please see perception_people_launch/README.md for start-up information.
+This is the wheelchair detector package. Given a laser scan it will detect wheelchairs and publish these as a pose array.
 
-When using the default STRANDS perception pipeline, please cite:
+Both the input (`LaserScan`) as well as the output (`PoseArray`) topics can be set based on the ros parameters `laser_topic` and `detection_topic`. They will default to `/scan` and `/wheelchair_detections`.
 
-```
-@inproceedings{dondrup2015tracking,
-  title={Real-time multisensor people tracking for human-robot spatial interaction},
-  author={Dondrup, Christian and Bellotto, Nicola and Jovan, Ferdian and Hanheide, Marc},
-  publisher={ICRA/IEEE},
-  booktitle={Workshop on Machine Learning for Social Robotics at International Conference on Robotics and Automation (ICRA)},
-  year={2015}
-}
-```
+Currently this is only a dummy node and the readme is here because there should be a readme!
 
-This package contains the people perception pipeline. It is comprised of two detectors:
-* Upper body detector
-* Leg Detector: http://wiki.ros.org/leg_detector
+## The wills and won'ts
+To clarify what we are currently planning to do:
+1. The node will publish wheelchair detections as pose arrays.
+2. In case stuff goes great we might even distinguish between wheelchairs and possible other walking aids. In such a case we will publish them on seperate topics.
 
-Depricated and moved to attic branch:
-* Ground HOG feature detector
-
-Two trackers:
-* Bayesian People Tracker
-* Pedestrian Tracker (currently depricated)
-
-And a lot of utility and helper nodes. See https://www.youtube.com/watch?v=zdnvhQU1YNo for a concise explanation. 
-
-Please refere to the READMEs in the specific packages.
+We currently do not plan to and thus likely won't:
+1. Publish orientations. This is not feasible based on laser data.
+2. Explicitely track detections ourselves.
