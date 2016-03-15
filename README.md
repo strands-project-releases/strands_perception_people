@@ -1,46 +1,31 @@
-Upper body skeleton estimator
-==========================
+strands_perception_people
+=========================
 
-This package estimates the 3d positions of the 9 upper body skeleton joints.
+Please see perception_people_launch/README.md for start-up information.
 
-
-
-Launching
----------
-
-Use the following launchfile for launching:
+When using the default STRANDS perception pipeline, please cite:
 
 ```
-roslaunch rwth_upper_body_skeleton_random_walk fixed.launch 
-
+@inproceedings{dondrup2015tracking,
+  title={Real-time multisensor people tracking for human-robot spatial interaction},
+  author={Dondrup, Christian and Bellotto, Nicola and Jovan, Ferdian and Hanheide, Marc},
+  publisher={ICRA/IEEE},
+  booktitle={Workshop on Machine Learning for Social Robotics at International Conference on Robotics and Automation (ICRA)},
+  year={2015}
+}
 ```
 
-The skeleton detector requires the output of the upper body detector as a starting point for rough person segmentation from background and will not work if upper bodies are not detected.
+This package contains the people perception pipeline. It is comprised of two detectors:
+* Upper body detector
+* Leg Detector: http://wiki.ros.org/leg_detector
 
+Depricated and moved to attic branch:
+* Ground HOG feature detector
 
-Run
-===
+Two trackers:
+* Bayesian People Tracker
+* Pedestrian Tracker (currently depricated)
 
-Dependencies
-------------
+And a lot of utility and helper nodes. See https://www.youtube.com/watch?v=zdnvhQU1YNo for a concise explanation. 
 
-This node needs `upper_body_detector/upper_body_detector.launch` to run,
-which in turn needs `ground_plane_estimation/ground_plane_fixed.launch`.
-
-
-
-Parameters
-----------
-
-* `depth_image_msg` *default = /head_xtion/depth/image_rect_meters: Depth Image Frame.
-* `upper_body_msg` *default = /upper_body_detector/detections: The deteced upper bodies
-* `rgb_image_msg` *default = /head_xtion/rgb/image_rect_color: RGB Image Frame.
-
-
-roslaunch
----------
-```
-roslaunch rwth_upper_body_skeleton_random_walk fixed.launch  [parameter_name:=value]
-```
-
-
+Please refere to the READMEs in the specific packages.
