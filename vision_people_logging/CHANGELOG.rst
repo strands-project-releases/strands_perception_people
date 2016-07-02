@@ -2,6 +2,9 @@
 Changelog for package vision_people_logging
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+1.5.2 (2016-07-02)
+------------------
+
 1.5.1 (2016-07-02)
 ------------------
 * ready to be tested (again)
