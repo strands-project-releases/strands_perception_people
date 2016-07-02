@@ -2,6 +2,9 @@
 Changelog for package human_trajectory
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+1.5.2 (2016-07-02)
+------------------
+
 1.5.1 (2016-07-02)
 ------------------
 * merge with indigo-devel strands
