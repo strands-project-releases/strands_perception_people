@@ -2,6 +2,9 @@
 Changelog for package strands_perception_people
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+1.5.1 (2016-07-02)
+------------------
+
 1.5.0 (2016-03-15)
 ------------------
 * Merge pull request `#189 <https://github.com/strands-project/strands_perception_people/issues/189>`_ from Pandoro/indigo-devel
