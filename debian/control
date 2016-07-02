@@ -1,0 +1,12 @@
+Source: ros-indigo-bayes-people-tracker
+Section: misc
+Priority: extra
+Maintainer: Christian Dondrup <cdondrup@lincoln.ac.uk>
+Build-Depends: debhelper (>= 9.0.0), libboost-all-dev, ros-indigo-bayes-tracking, ros-indigo-catkin, ros-indigo-geometry-msgs, ros-indigo-message-generation, ros-indigo-people-msgs, ros-indigo-roscpp, ros-indigo-std-msgs, ros-indigo-tf, ros-indigo-visualization-msgs
+Homepage: https://github.com/strands-project/strands_perception_people
+Standards-Version: 3.9.2
+
+Package: ros-indigo-bayes-people-tracker
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, libboost-all-dev, ros-indigo-bayes-tracking, ros-indigo-geometry-msgs, ros-indigo-message-runtime, ros-indigo-people-msgs, ros-indigo-rosbag-migration-rule, ros-indigo-roscpp, ros-indigo-std-msgs, ros-indigo-tf, ros-indigo-visualization-msgs
+Description: The bayes_people_tracker package
