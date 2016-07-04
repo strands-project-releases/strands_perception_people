@@ -1,33 +1,31 @@
-## Upper Body Detector
-This package detects the upper bodies of persons using the depth image.
+strands_perception_people
+=========================
 
-### Run
-Parameters:
-* `load_params_from_file` _default = true_: `false` tries to read parameters from datacentre, `true` reads parameters from YAML file specified by `config_file`
-* `config_file` _default = $(find upper_body_detector)/config/upper_body_detector.yaml_: The config file containing all the essential parameters. Only used if `load_params_from_file == true`.
-* `template_file` _default = $(find upper_body_detector)/config/upper_body_template.yaml_: The upper body template file. Read from the database if `load_params_from_file == true`.
-* `machine` _default = localhost_: Determines on which machine this node should run.
-* `user` _default = ""_: The user used for the ssh connection if machine is not localhost.
-* `queue_size` _default = 20_: The synchronisation queue size
-* `config_file` _default = ""_: The global config file. Can be found in strands_upper_bodydetector/config
-* `template_file` _default = ""_: The template file. Can be found in config.
-* `camera_namespace` _default = /head_xtion_: The camera namespace.
-* `depth_image` _default = /depth/image_rect_: `camera_namespace` + `depth_image` = depth image topic
-* `rgb_image` _default = /rgb/image_rect_color_: `camera_namespace` + `rgb_image` = rgb image topic
-* `camera_info_depth` _default = /depth/camera_info_: `camera_namespace` + `camera_info_depth` = depth camera info topic
-* `ground_plane` _default = /ground_plane_: The estimated/fixed ground plane
-* `upper_body_detections` _default = /upper_body_detector/detections_: The deteced upper bodies
-* `upper_body_bb_centres` _default = /upper_body_detector/bounding_box_centres_: Publishing a pose array of the centres of the bounding boxes
-* `upper_body_image` _default = /upper_body_detector/image_: The resulting image showing the detections as a boundingbox
-* `upper_body_markers default = /upper_body_detector/marker_array_: A visualisation array for rviz
+Please see perception_people_launch/README.md for start-up information.
 
+When using the default STRANDS perception pipeline, please cite:
 
-rosrun:
 ```
-rosrun upper_body_detector upper_body_detector [_parameter_name:=value]
+@inproceedings{dondrup2015tracking,
+  title={Real-time multisensor people tracking for human-robot spatial interaction},
+  author={Dondrup, Christian and Bellotto, Nicola and Jovan, Ferdian and Hanheide, Marc},
+  publisher={ICRA/IEEE},
+  booktitle={Workshop on Machine Learning for Social Robotics at International Conference on Robotics and Automation (ICRA)},
+  year={2015}
+}
 ```
 
-roslaunch:
-```
-roslaunch upper_body_detector upper_body_detector.launch [parameter_name:=value]
-```
+This package contains the people perception pipeline. It is comprised of two detectors:
+* Upper body detector
+* Leg Detector: http://wiki.ros.org/leg_detector
+
+Depricated and moved to attic branch:
+* Ground HOG feature detector
+
+Two trackers:
+* Bayesian People Tracker
+* Pedestrian Tracker (currently depricated)
+
+And a lot of utility and helper nodes. See https://www.youtube.com/watch?v=zdnvhQU1YNo for a concise explanation. 
+
+Please refere to the READMEs in the specific packages.
