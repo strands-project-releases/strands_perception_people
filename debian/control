@@ -1,0 +1,12 @@
+Source: ros-indigo-strands-perception-people
+Section: misc
+Priority: extra
+Maintainer: Christian Dondrup <cdondrup@lincoln.ac.uk>
+Build-Depends: debhelper (>= 9.0.0), ros-indigo-catkin
+Homepage: https://github.com/strands-project/strands_perception_people
+Standards-Version: 3.9.2
+
+Package: ros-indigo-strands-perception-people
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-indigo-bayes-people-tracker, ros-indigo-bayes-people-tracker-logging, ros-indigo-ground-plane-estimation, ros-indigo-human-trajectory, ros-indigo-mdl-people-tracker, ros-indigo-odometry-to-motion-matrix, ros-indigo-opencv-warco, ros-indigo-people-tracker-emulator, ros-indigo-people-tracker-filter, ros-indigo-perception-people-launch, ros-indigo-strands-head-orientation, ros-indigo-upper-body-detector, ros-indigo-vision-people-logging, ros-indigo-visual-odometry, ros-indigo-wheelchair-detector
+Description: The strands_perception_people metapackage
