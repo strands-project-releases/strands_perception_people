@@ -2,6 +2,9 @@
 Changelog for package people_tracker_emulator
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+1.5.5 (2017-07-02)
+------------------
+
 1.5.4 (2016-11-03)
 ------------------
 * Fixing marker generation for several people (`#205 <https://github.com/strands-project/strands_perception_people/issues/205>`_)
