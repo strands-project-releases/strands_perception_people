@@ -2,6 +2,11 @@
 Changelog for package bayes_people_tracker
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+1.6.0 (2017-09-01)
+------------------
+* changed from cdondrup to marc
+* Contributors: Marc Hanheide
+
 1.5.5 (2017-07-02)
 ------------------
 

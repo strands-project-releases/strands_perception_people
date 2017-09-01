@@ -1,10 +1,10 @@
 <?xml version="1.0"?>
 <package>
   <name>upper_body_detector</name>
-  <version>1.5.5</version>
+  <version>1.6.0</version>
   <description>The upper_body_detector package</description>
 
-  <maintainer email="cdondrup@lincoln.ac.uk">Christian Dondrup</maintainer>
+  <maintainer email="marc@hanheide.net">Marc Hanheide</maintainer>
 
   <license>BSD</license>
 
