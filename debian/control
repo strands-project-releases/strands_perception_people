@@ -1,0 +1,12 @@
+Source: ros-kinetic-people-tracker-emulator
+Section: misc
+Priority: extra
+Maintainer: Marc Hanheide <marc@hanheide.net>
+Build-Depends: debhelper (>= 9.0.0), ros-kinetic-bayes-people-tracker, ros-kinetic-catkin, ros-kinetic-geometry-msgs, ros-kinetic-people-msgs, ros-kinetic-rospy, ros-kinetic-std-msgs, ros-kinetic-tf, ros-kinetic-visualization-msgs
+Homepage: https://github.com/strands-project/strands_perception_people
+Standards-Version: 3.9.2
+
+Package: ros-kinetic-people-tracker-emulator
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-kinetic-bayes-people-tracker, ros-kinetic-geometry-msgs, ros-kinetic-people-msgs, ros-kinetic-rospy, ros-kinetic-std-msgs, ros-kinetic-tf, ros-kinetic-visualization-msgs
+Description: The people_tracker_emulator package
