@@ -1,0 +1,12 @@
+Source: ros-kinetic-bayes-people-tracker
+Section: misc
+Priority: extra
+Maintainer: Marc Hanheide <marc@hanheide.net>
+Build-Depends: debhelper (>= 9.0.0), libboost-all-dev, ros-kinetic-bayes-tracking, ros-kinetic-catkin, ros-kinetic-geometry-msgs, ros-kinetic-message-generation, ros-kinetic-people-msgs, ros-kinetic-roscpp, ros-kinetic-std-msgs, ros-kinetic-tf, ros-kinetic-visualization-msgs
+Homepage: https://github.com/strands-project/strands_perception_people
+Standards-Version: 3.9.2
+
+Package: ros-kinetic-bayes-people-tracker
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, libboost-all-dev, ros-kinetic-bayes-tracking, ros-kinetic-geometry-msgs, ros-kinetic-message-runtime, ros-kinetic-people-msgs, ros-kinetic-rosbag-migration-rule, ros-kinetic-roscpp, ros-kinetic-std-msgs, ros-kinetic-tf, ros-kinetic-visualization-msgs
+Description: The bayes_people_tracker package
