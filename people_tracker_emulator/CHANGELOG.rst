@@ -2,6 +2,9 @@
 Changelog for package people_tracker_emulator
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+1.8.0 (2018-10-01)
+------------------
+
 1.7.0 (2018-09-04)
 ------------------
 * Updated email to new Oxford address
