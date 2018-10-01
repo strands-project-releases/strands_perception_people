@@ -1,0 +1,12 @@
+Source: ros-kinetic-detector-msg-to-pose-array
+Section: misc
+Priority: extra
+Maintainer: Marc Hanheide <marc@hanheide.net>
+Build-Depends: debhelper (>= 9.0.0), ros-kinetic-catkin, ros-kinetic-genpy, ros-kinetic-geometry-msgs, ros-kinetic-roslib, ros-kinetic-rospy, ros-kinetic-rostopic
+Homepage: https://github.com/strands-project/strands_perception_people
+Standards-Version: 3.9.2
+
+Package: ros-kinetic-detector-msg-to-pose-array
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-kinetic-genpy, ros-kinetic-geometry-msgs, ros-kinetic-roslib, ros-kinetic-rospy, ros-kinetic-rostopic
+Description: The detector_msg_to_pose_array package
