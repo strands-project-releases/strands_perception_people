@@ -1,0 +1,12 @@
+Source: ros-kinetic-mdl-people-tracker
+Section: misc
+Priority: extra
+Maintainer: Marc Hanheide <marc@hanheide.net>
+Build-Depends: debhelper (>= 9.0.0), libboost-all-dev, libqt4-dev, ros-kinetic-catkin, ros-kinetic-cv-bridge, ros-kinetic-geometry-msgs, ros-kinetic-ground-plane-estimation, ros-kinetic-image-transport, ros-kinetic-message-filters, ros-kinetic-message-generation, ros-kinetic-roscpp, ros-kinetic-sensor-msgs, ros-kinetic-std-msgs, ros-kinetic-tf, ros-kinetic-upper-body-detector, ros-kinetic-visual-odometry, ros-kinetic-visualization-msgs
+Homepage: https://github.com/strands-project/strands_perception_people
+Standards-Version: 3.9.2
+
+Package: ros-kinetic-mdl-people-tracker
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, libboost-all-dev, libqt4-dev, ros-kinetic-cv-bridge, ros-kinetic-geometry-msgs, ros-kinetic-ground-plane-estimation, ros-kinetic-image-transport, ros-kinetic-message-filters, ros-kinetic-message-runtime, ros-kinetic-roscpp, ros-kinetic-sensor-msgs, ros-kinetic-std-msgs, ros-kinetic-tf, ros-kinetic-upper-body-detector, ros-kinetic-visual-odometry, ros-kinetic-visualization-msgs
+Description: The mdl_people_tracker package
