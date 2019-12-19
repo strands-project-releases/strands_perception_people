@@ -1,0 +1,279 @@
+ros-kinetic-human-trajectory (1.9.0-1xenial) xenial; urgency=high
+
+
+
+ -- Ferdian Jovan <fxj345@cs.bham.ac.uk>  Thu, 19 Dec 2019 00:00:00 -0000
+
+ros-kinetic-human-trajectory (1.8.1-1xenial) xenial; urgency=high
+
+
+
+ -- Ferdian Jovan <fxj345@cs.bham.ac.uk>  Tue, 21 May 2019 00:00:00 -0000
+
+ros-kinetic-human-trajectory (1.8.0-1xenial) xenial; urgency=high
+
+
+
+ -- Ferdian Jovan <fxj345@cs.bham.ac.uk>  Mon, 01 Oct 2018 00:00:00 -0000
+
+ros-kinetic-human-trajectory (1.7.0-1xenial) xenial; urgency=high
+
+
+
+ -- Ferdian Jovan <fxj345@cs.bham.ac.uk>  Tue, 04 Sep 2018 00:00:00 -0000
+
+ros-kinetic-human-trajectory (1.6.0-1xenial) xenial; urgency=high
+
+  * changelogs
+  * Contributors: Marc Hanheide
+
+ -- Ferdian Jovan <fxj345@cs.bham.ac.uk>  Fri, 01 Sep 2017 00:00:00 -0000
+
+ros-kinetic-human-trajectory (1.5.5-1xenial) xenial; urgency=high
+
+  * updated changelogs
+  * Contributors: Jenkins
+
+ -- Ferdian Jovan <fxj345@cs.bham.ac.uk>  Sun, 02 Jul 2017 00:00:00 -0000
+
+ros-kinetic-human-trajectory (1.5.4-1xenial) xenial; urgency=high
+
+  * updated changelogs
+  * Contributors: Jenkins
+
+ -- Ferdian Jovan <fxj345@cs.bham.ac.uk>  Thu, 03 Nov 2016 00:00:00 -0000
+
+ros-kinetic-human-trajectory (1.5.3-1xenial) xenial; urgency=high
+
+  * updated changelogs
+  * Contributors: Jenkins
+
+ -- Ferdian Jovan <fxj345@cs.bham.ac.uk>  Mon, 04 Jul 2016 00:00:00 -0000
+
+ros-kinetic-human-trajectory (1.5.2-1xenial) xenial; urgency=high
+
+  * updated changelogs
+  * Contributors: Jenkins
+
+ -- Ferdian Jovan <fxj345@cs.bham.ac.uk>  Sat, 02 Jul 2016 20:52:00 -0000
+
+ros-kinetic-human-trajectory (1.5.1-1xenial) xenial; urgency=high
+
+  * updated changelogs
+  * Merge pull request #193 <https://github.com/strands-project/strands_perception_people/issues/193> from ferdianjovan/people_sitting_feature
+    People sitting feature
+  * merge with indigo-devel strands
+  * unimportant fixing
+  * modify CMake and package definition
+  * fixing calculation and has been tested on betty
+  * fixing bug with people sitting feature
+  * Merge branch 'indigo-devel' of https://github.com/strands-project/strands_perception_people into people_sitting_feature
+  * make trajectory package able to pick sitting people
+  * modify launch file
+  * add or cond for save_ubd, add argument for human_trajectory.launch
+  * Contributors: Ferdian Jovan, Jenkins, Nick Hawes, Rares Ambrus, STRANDS, ferdianjovan
+
+ -- Ferdian Jovan <fxj345@cs.bham.ac.uk>  Sat, 02 Jul 2016 17:54:00 -0000
+
+ros-kinetic-human-trajectory (1.5.0-1xenial) xenial; urgency=high
+
+  * updated changelogs
+  * Contributors: Jenkins
+
+ -- Ferdian Jovan <fxj345@cs.bham.ac.uk>  Tue, 15 Mar 2016 00:00:00 -0000
+
+ros-kinetic-human-trajectory (1.4.0-1xenial) xenial; urgency=high
+
+  * updated changelogs
+  * Contributors: Jenkins
+
+ -- Ferdian Jovan <fxj345@cs.bham.ac.uk>  Wed, 17 Feb 2016 00:00:00 -0000
+
+ros-kinetic-human-trajectory (1.3.1-1xenial) xenial; urgency=high
+
+  * updated changelogs
+  * Merge remote-tracking branch 'upstream/indigo-devel' into indigo-devel
+  * Contributors: Alexander Hermans, Jenkins
+
+ -- Ferdian Jovan <fxj345@cs.bham.ac.uk>  Thu, 11 Feb 2016 00:00:00 -0000
+
+ros-kinetic-human-trajectory (1.3.0-1xenial) xenial; urgency=high
+
+  * updated changelogs
+  * Contributors: Jenkins
+
+ -- Ferdian Jovan <fxj345@cs.bham.ac.uk>  Mon, 01 Feb 2016 00:00:00 -0000
+
+ros-kinetic-human-trajectory (1.2.1-1xenial) xenial; urgency=high
+
+  * updated changelogs
+  * Contributors: Jenkins
+
+ -- Ferdian Jovan <fxj345@cs.bham.ac.uk>  Thu, 28 Jan 2016 00:00:00 -0000
+
+ros-kinetic-human-trajectory (1.2.0-1xenial) xenial; urgency=high
+
+  * updated changelogs
+  * Contributors: Jenkins
+
+ -- Ferdian Jovan <fxj345@cs.bham.ac.uk>  Wed, 11 Nov 2015 00:00:00 -0000
+
+ros-kinetic-human-trajectory (1.1.8-1xenial) xenial; urgency=high
+
+  * updated changelogs
+  * Contributors: Jenkins
+
+ -- Ferdian Jovan <fxj345@cs.bham.ac.uk>  Thu, 03 Sep 2015 00:00:00 -0000
+
+ros-kinetic-human-trajectory (1.1.7-1xenial) xenial; urgency=high
+
+  * Merge pull request #167 <https://github.com/strands-project/strands_perception_people/issues/167> from PDuckworth/indigo-devel
+    updated trajectory message to include the displacement
+  * Merge pull request #1 <https://github.com/strands-project/strands_perception_people/issues/1> from ferdianjovan/paul_update
+    Update for your PR
+  * add resizing max retrieved trajectories to launch file
+  * update README, modify the OfflineTrajectories to work on query for both collections, fix an error in trajectory.py
+  * add a script to import trajectories from mongo to file
+  * to make launch file accessible
+  * mini update to remove _meta
+  * updater tool to query, edit, and then re-upload people_trajectory documents
+  * updated trajectory message to include the displacement and displacement_to_pose ratio used for filtering
+  * forgot to put launch folder in install CMakeLists.txt
+  * Contributors: Christian Dondrup, Ferdian Jovan, Paul, Paul Duckworth
+
+ -- Ferdian Jovan <fxj345@cs.bham.ac.uk>  Tue, 25 Aug 2015 00:00:00 -0000
+
+ros-kinetic-human-trajectory (1.1.6-1xenial) xenial; urgency=high
+
+  * updated changelogs
+  * Merge pull request #165 <https://github.com/strands-project/strands_perception_people/issues/165> from ferdianjovan/indigo-devel
+    Fixing error in https://github.com/strands-project/strands_perception_people/issues/163
+  * Merge branch 'indigo-devel' of https://github.com/strands-project/strands_perception_people into indigo-devel
+  * 1.1.5
+  * updated changelogs
+  * 1.1.4
+  * updated changelogs
+  * Merge branch 'indigo-devel' of https://github.com/strands-project/strands_perception_people into indigo-devel
+  * Fixing error length problem in get_trajectory_message function, making visualisation adaptive to the length of poses (preventing error),
+    Add the option to choose trajectories from a specific map.
+  * Contributors: Christian Dondrup, Ferdian Jovan, Jenkins
+
+ -- Ferdian Jovan <fxj345@cs.bham.ac.uk>  Wed, 24 Jun 2015 00:00:00 -0000
+
+ros-kinetic-human-trajectory (1.1.5-1xenial) xenial; urgency=high
+
+  * updated changelogs
+  * Contributors: Jenkins
+
+ -- Ferdian Jovan <fxj345@cs.bham.ac.uk>  Fri, 22 May 2015 00:00:00 -0000
+
+ros-kinetic-human-trajectory (1.1.4-1xenial) xenial; urgency=high
+
+  * updated changelogs
+  * Merge pull request #161 <https://github.com/strands-project/strands_perception_people/issues/161> from ferdianjovan/indigo-devel
+    Add logging manager permission
+  * forgot to add launch folder
+  * add launch file, add logging_manager permission, add restriction to post trajectories longer than 1 pose.
+  * add logging manager, fix fluctuating cpu usage
+  * Contributors: Ferdian Jovan, Jenkins, Nick Hawes
+
+ -- Ferdian Jovan <fxj345@cs.bham.ac.uk>  Sun, 10 May 2015 00:00:00 -0000
+
+ros-kinetic-human-trajectory (1.1.3-1xenial) xenial; urgency=high
+
+  * updated changelogs
+  * Merge branch 'indigo-devel' of http://github.com/strands-project/strands_perception_people into topolog
+    Conflicts:
+    bayes_people_tracker_logging/launch/logging.launch
+  * Contributors: Christian Dondrup, Jenkins
+
+ -- Ferdian Jovan <fxj345@cs.bham.ac.uk>  Fri, 10 Apr 2015 00:00:00 -0000
+
+ros-kinetic-human-trajectory (1.1.2-1xenial) xenial; urgency=high
+
+  * updated changelogs
+  * Contributors: Jenkins
+
+ -- Ferdian Jovan <fxj345@cs.bham.ac.uk>  Tue, 07 Apr 2015 00:00:00 -0000
+
+ros-kinetic-human-trajectory (1.1.1-1xenial) xenial; urgency=high
+
+  * updated changelogs
+  * Contributors: Jenkins
+
+ -- Ferdian Jovan <fxj345@cs.bham.ac.uk>  Fri, 03 Apr 2015 00:00:00 -0000
+
+ros-kinetic-human-trajectory (1.1.0-1xenial) xenial; urgency=high
+
+  * Merge pull request #151 <https://github.com/strands-project/strands_perception_people/issues/151> from ferdianjovan/indigo-devel
+    Add visualisation aid for trajectories
+  * fixing visualization
+  * add visualisation aid taken from database
+  * replacing time with number of poses as suggested by Nick
+  * Contributors: Christian Dondrup, Ferdian Jovan
+
+ -- Ferdian Jovan <fxj345@cs.bham.ac.uk>  Thu, 02 Apr 2015 00:00:00 -0000
+
+ros-kinetic-human-trajectory (1.0.0-1xenial) xenial; urgency=high
+
+  * Updating changelogs.
+  * Merge pull request #145 <https://github.com/strands-project/strands_perception_people/issues/145> from ferdianjovan/indigo-devel
+    adding visualization to rviz via nav_msgs/Path
+  * keep visualization for 1 min
+  * forgot (again) to change default detector.yaml in bayes_people_tracker
+  * adding visualization to rviz via nav_msgs/Path
+  * Contributors: Christian Dondrup, Ferdian Jovan
+
+ -- Ferdian Jovan <fxj345@cs.bham.ac.uk>  Tue, 10 Mar 2015 00:00:00 -0000
+
+ros-kinetic-human-trajectory (0.1.4-1xenial) xenial; urgency=high
+
+  * updated changelogs
+  * Merge pull request #140 <https://github.com/strands-project/strands_perception_people/issues/140> from ferdianjovan/indigo-devel
+    Provide online stitching poses into trajectories
+  * provide online stitching poses into trajectories
+  * Merge branch 'indigo-devel' of https://github.com/strands-project/strands_perception_people into indigo-devel
+  * add online trajectory construction from /people_tracker/positions
+  * Contributors: Christian Dondrup, Ferdian Jovan, Jenkins
+
+ -- Ferdian Jovan <fxj345@cs.bham.ac.uk>  Fri, 06 Mar 2015 00:00:00 -0000
+
+ros-kinetic-human-trajectory (0.1.3-1xenial) xenial; urgency=high
+
+  * updated changelogs
+  * Merge pull request #136 <https://github.com/strands-project/strands_perception_people/issues/136> from ferdianjovan/indigo-devel
+    Change message that is stored in Mongo, remove store_to_db option
+  * Merge branch 'indigo-devel' of https://github.com/strands-project/strands_perception_people into indigo-devel
+  * polish code, change message that is stored, remove store_to_database option
+  * Contributors: Christian Dondrup, Ferdian Jovan, Jenkins
+
+ -- Ferdian Jovan <fxj345@cs.bham.ac.uk>  Wed, 25 Feb 2015 00:00:00 -0000
+
+ros-kinetic-human-trajectory (0.1.2-1xenial) xenial; urgency=high
+
+  * updated changelogs
+  * Merge pull request #134 <https://github.com/strands-project/strands_perception_people/issues/134> from cdondrup/fix
+    Fixing my sed mistakes and the install targets for human_trajectory.
+  * Fixing my sed mistakes and the install targets for human_trajectory.
+  * Merge pull request #131 <https://github.com/strands-project/strands_perception_people/issues/131> from ferdianjovan/indigo-devel
+    add human_trajectory package to indigo-devel branch
+  * fixing Cmake and package.xml, add this package in metapackage
+  * add dependency in Cmake and package.xml
+  * add human_trajectory package to indigo-devel branch
+  * Contributors: Christian Dondrup, Ferdian Jovan, Jenkins
+
+ -- Ferdian Jovan <fxj345@cs.bham.ac.uk>  Fri, 20 Feb 2015 00:00:00 -0000
+
+ros-kinetic-human-trajectory (0.1.1-1xenial) xenial; urgency=high
+
+
+
+ -- Ferdian Jovan <fxj345@cs.bham.ac.uk>  Wed, 18 Feb 2015 18:37:00 -0000
+
+ros-kinetic-human-trajectory (0.1.0-1xenial) xenial; urgency=high
+
+
+
+ -- Ferdian Jovan <fxj345@cs.bham.ac.uk>  Wed, 18 Feb 2015 16:59:00 -0000
+
+
