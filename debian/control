@@ -1,0 +1,12 @@
+Source: ros-melodic-mdl-people-tracker
+Section: misc
+Priority: optional
+Maintainer: Marc Hanheide <marc@hanheide.net>
+Build-Depends: debhelper (>= 9.0.0), libboost-all-dev, libqt4-dev, ros-melodic-catkin, ros-melodic-cv-bridge, ros-melodic-geometry-msgs, ros-melodic-ground-plane-estimation, ros-melodic-image-transport, ros-melodic-message-filters, ros-melodic-message-generation, ros-melodic-roscpp, ros-melodic-sensor-msgs, ros-melodic-std-msgs, ros-melodic-tf, ros-melodic-upper-body-detector, ros-melodic-visual-odometry, ros-melodic-visualization-msgs
+Homepage: https://github.com/strands-project/strands_perception_people
+Standards-Version: 3.9.2
+
+Package: ros-melodic-mdl-people-tracker
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, libboost-all-dev, libqt4-dev, ros-melodic-cv-bridge, ros-melodic-geometry-msgs, ros-melodic-ground-plane-estimation, ros-melodic-image-transport, ros-melodic-message-filters, ros-melodic-message-runtime, ros-melodic-roscpp, ros-melodic-sensor-msgs, ros-melodic-std-msgs, ros-melodic-tf, ros-melodic-upper-body-detector, ros-melodic-visual-odometry, ros-melodic-visualization-msgs
+Description: The mdl_people_tracker package
