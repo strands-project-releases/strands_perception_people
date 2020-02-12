@@ -1,0 +1,12 @@
+Source: ros-melodic-bayes-people-tracker
+Section: misc
+Priority: optional
+Maintainer: Marc Hanheide <marc@hanheide.net>
+Build-Depends: debhelper (>= 9.0.0), libboost-all-dev, ros-melodic-bayes-tracking, ros-melodic-catkin, ros-melodic-geometry-msgs, ros-melodic-message-generation, ros-melodic-people-msgs, ros-melodic-roscpp, ros-melodic-std-msgs, ros-melodic-tf, ros-melodic-visualization-msgs
+Homepage: https://github.com/strands-project/strands_perception_people
+Standards-Version: 3.9.2
+
+Package: ros-melodic-bayes-people-tracker
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, libboost-all-dev, ros-melodic-bayes-tracking, ros-melodic-geometry-msgs, ros-melodic-message-runtime, ros-melodic-people-msgs, ros-melodic-rosbag-migration-rule, ros-melodic-roscpp, ros-melodic-std-msgs, ros-melodic-tf, ros-melodic-visualization-msgs
+Description: The bayes_people_tracker package
