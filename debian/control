@@ -1,0 +1,12 @@
+Source: ros-melodic-human-trajectory
+Section: misc
+Priority: optional
+Maintainer: Ferdian Jovan <fxj345@cs.bham.ac.uk>
+Build-Depends: debhelper (>= 9.0.0), ros-melodic-bayes-people-tracker, ros-melodic-catkin, ros-melodic-geometry-msgs, ros-melodic-message-filters, ros-melodic-message-generation, ros-melodic-mongodb-store, ros-melodic-rospy, ros-melodic-std-msgs, ros-melodic-strands-navigation-msgs, ros-melodic-tf, ros-melodic-topological-logging-manager
+Homepage: https://github.com/strands-project/strands_perception_people
+Standards-Version: 3.9.2
+
+Package: ros-melodic-human-trajectory
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, python-pymongo, ros-melodic-bayes-people-tracker, ros-melodic-geometry-msgs, ros-melodic-message-filters, ros-melodic-message-runtime, ros-melodic-mongodb-store, ros-melodic-rospy, ros-melodic-std-msgs, ros-melodic-strands-navigation-msgs, ros-melodic-tf, ros-melodic-topological-logging-manager
+Description: A package that stitch human poses together to create a trajectory for the human
