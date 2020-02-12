@@ -1,31 +1,21 @@
-strands_perception_people
-=========================
+## Logging package
+This packge contains a logging node to save the detections to the message_store.
 
-Please see perception_people_launch/README.md for start-up information.
+All the information given on how to run the nodes should only be used if you need to run them seperately. In normal cases please refer to the `perception_people_launch` package to start the whole perception pipeline.
 
-When using the default STRANDS perception pipeline, please cite:
+### Logging
+This node uses the `Logging.msg` to save the detected people together with their realworld position, the robots pose, the upper body detector and people tracker results, and the tf transform used to create the real world coordinates in the message store.
 
-```
-@inproceedings{dondrup2015tracking,
-  title={Real-time multisensor people tracking for human-robot spatial interaction},
-  author={Dondrup, Christian and Bellotto, Nicola and Jovan, Ferdian and Hanheide, Marc},
-  publisher={ICRA/IEEE},
-  booktitle={Workshop on Machine Learning for Social Robotics at International Conference on Robotics and Automation (ICRA)},
-  year={2015}
-}
-```
+Run with:
 
-This package contains the people perception pipeline. It is comprised of two detectors:
-* Upper body detector
-* Leg Detector: http://wiki.ros.org/leg_detector
+`roslaunch bayes_people_tracker_logging logging.launch`
 
-Depricated and moved to attic branch:
-* Ground HOG feature detector
+Parameters:
+* `log`: _Default: true_ This convenience parameter allows to start the whole system without logging the data
 
-Two trackers:
-* Bayesian People Tracker
-* Pedestrian Tracker (currently depricated)
+## Updating old database entries
 
-And a lot of utility and helper nodes. See https://www.youtube.com/watch?v=zdnvhQU1YNo for a concise explanation. 
+This assumes that your `mongodb_store` is running.
 
-Please refere to the READMEs in the specific packages.
+With version >1.1.8 the message type of the people tracker has been changed to include the velocities of humans as a Vector3. To update old database entries just run `rosrun bayes_people_tracker_logging migrate.py` which will update entries in place. Please be careful and create a copy of the `people_perception` collection in the message store before running this.
+
