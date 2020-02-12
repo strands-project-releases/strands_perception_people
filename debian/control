@@ -1,0 +1,12 @@
+Source: ros-melodic-people-tracker-filter
+Section: misc
+Priority: optional
+Maintainer: Marc Hanheide <marc@hanheide.net>
+Build-Depends: debhelper (>= 9.0.0), ros-melodic-bayes-people-tracker, ros-melodic-catkin, ros-melodic-geometry-msgs, ros-melodic-grid-map-core, ros-melodic-grid-map-ros, ros-melodic-message-filters, ros-melodic-nav-msgs, ros-melodic-people-msgs, ros-melodic-roscpp, ros-melodic-std-msgs, ros-melodic-tf, ros-melodic-tf2, ros-melodic-tf2-geometry-msgs, ros-melodic-visualization-msgs
+Homepage: 
+Standards-Version: 3.9.2
+
+Package: ros-melodic-people-tracker-filter
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-melodic-bayes-people-tracker, ros-melodic-geometry-msgs, ros-melodic-grid-map-core, ros-melodic-grid-map-ros, ros-melodic-message-filters, ros-melodic-nav-msgs, ros-melodic-people-msgs, ros-melodic-roscpp, ros-melodic-std-msgs, ros-melodic-tf, ros-melodic-tf2, ros-melodic-tf2-geometry-msgs, ros-melodic-visualization-msgs
+Description: The people_tracker_filter package
