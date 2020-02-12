@@ -1,0 +1,12 @@
+Source: ros-melodic-odometry-to-motion-matrix
+Section: misc
+Priority: optional
+Maintainer: Marc Hanheide <marc@hanheide.net>
+Build-Depends: debhelper (>= 9.0.0), libeigen3-dev, ros-melodic-catkin, ros-melodic-cmake-modules, ros-melodic-eigen-conversions, ros-melodic-nav-msgs, ros-melodic-roscpp, ros-melodic-tf, ros-melodic-tf-conversions, ros-melodic-visual-odometry
+Homepage: https://github.com/strands-project/strands_perception_people
+Standards-Version: 3.9.2
+
+Package: ros-melodic-odometry-to-motion-matrix
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, libeigen3-dev, ros-melodic-eigen-conversions, ros-melodic-nav-msgs, ros-melodic-roscpp, ros-melodic-tf, ros-melodic-tf-conversions, ros-melodic-visual-odometry
+Description: The odometry_to_motion_matrix package
