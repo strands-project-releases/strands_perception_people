@@ -1,0 +1,12 @@
+Source: ros-melodic-vision-people-logging
+Section: misc
+Priority: optional
+Maintainer: Lucas Beyer <beyer@vision.rwth-aachen.de>
+Build-Depends: debhelper (>= 9.0.0), ros-melodic-catkin, ros-melodic-geometry-msgs, ros-melodic-message-filters, ros-melodic-message-generation, ros-melodic-mongodb-store, ros-melodic-rospy, ros-melodic-sensor-msgs, ros-melodic-tf, ros-melodic-upper-body-detector
+Homepage: https://github.com/strands-project/strands_perception_people
+Standards-Version: 3.9.2
+
+Package: ros-melodic-vision-people-logging
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-melodic-geometry-msgs, ros-melodic-message-filters, ros-melodic-message-runtime, ros-melodic-mongodb-store, ros-melodic-rospy, ros-melodic-sensor-msgs, ros-melodic-tf, ros-melodic-upper-body-detector
+Description: The vision_people_logging package
