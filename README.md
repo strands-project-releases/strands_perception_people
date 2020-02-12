@@ -1,3 +1,40 @@
+## strands_perception_people (melodic) - 1.10.0-1
+
+The packages in the `strands_perception_people` repository were released into the `melodic` distro by running `/usr/bin/bloom-release -r melodic -t melodic -n strands_perception_people` on `Wed, 12 Feb 2020 16:10:48 -0000`
+
+These packages were released:
+- `bayes_people_tracker`
+- `bayes_people_tracker_logging`
+- `detector_msg_to_pose_array`
+- `ground_plane_estimation`
+- `human_trajectory`
+- `mdl_people_tracker`
+- `odometry_to_motion_matrix`
+- `people_tracker_emulator`
+- `people_tracker_filter`
+- `perception_people_launch`
+- `strands_perception_people`
+- `upper_body_detector`
+- `vision_people_logging`
+- `visual_odometry`
+
+Version of package(s) in repository `strands_perception_people`:
+
+- upstream repository: https://github.com/strands-project/strands_perception_people.git
+- release repository: unknown
+- rosdistro version: `null`
+- old version: `null`
+- new version: `1.10.0-1`
+
+Versions of tools used:
+
+- bloom version: `0.9.0`
+- catkin_pkg version: `0.4.14`
+- rosdep version: `0.18.0`
+- rosdistro version: `0.7.5`
+- vcstools version: `0.1.42`
+
+
 ## strands_perception_people (kinetic) - 1.9.0-1
 
 The packages in the `strands_perception_people` repository were released into the `kinetic` distro by running `/usr/bin/bloom-release -y --no-web -t kinetic -r kinetic strands_perception_people` on `Thu, 19 Dec 2019 08:58:05 -0000`
