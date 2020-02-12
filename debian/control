@@ -1,0 +1,12 @@
+Source: ros-melodic-perception-people-launch
+Section: misc
+Priority: optional
+Maintainer: Marc Hanheide <marc@hanheide.net>
+Build-Depends: debhelper (>= 9.0.0), ros-melodic-catkin
+Homepage: https://github.com/strands-project/strands_perception_people
+Standards-Version: 3.9.2
+
+Package: ros-melodic-perception-people-launch
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-melodic-bayes-people-tracker, ros-melodic-bayes-people-tracker-logging, ros-melodic-detector-msg-to-pose-array, ros-melodic-ground-plane-estimation, ros-melodic-laser-filters, ros-melodic-leg-detector, ros-melodic-map-laser, ros-melodic-mdl-people-tracker, ros-melodic-odometry-to-motion-matrix, ros-melodic-people-msgs, ros-melodic-people-tracker-filter, ros-melodic-upper-body-detector
+Description: The perception_people_launch package
