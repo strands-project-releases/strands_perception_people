@@ -1,0 +1,12 @@
+Source: ros-melodic-strands-perception-people
+Section: misc
+Priority: optional
+Maintainer: Marc Hanheide <marc@hanheide.net>
+Build-Depends: debhelper (>= 9.0.0), ros-melodic-catkin
+Homepage: https://github.com/strands-project/strands_perception_people
+Standards-Version: 3.9.2
+
+Package: ros-melodic-strands-perception-people
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-melodic-bayes-people-tracker, ros-melodic-bayes-people-tracker-logging, ros-melodic-ground-plane-estimation, ros-melodic-human-trajectory, ros-melodic-mdl-people-tracker, ros-melodic-odometry-to-motion-matrix, ros-melodic-people-tracker-emulator, ros-melodic-people-tracker-filter, ros-melodic-perception-people-launch, ros-melodic-upper-body-detector, ros-melodic-vision-people-logging, ros-melodic-visual-odometry
+Description: The strands_perception_people metapackage
