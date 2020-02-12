@@ -1,0 +1,12 @@
+Source: ros-melodic-detector-msg-to-pose-array
+Section: misc
+Priority: optional
+Maintainer: Marc Hanheide <marc@hanheide.net>
+Build-Depends: debhelper (>= 9.0.0), ros-melodic-catkin, ros-melodic-genpy, ros-melodic-geometry-msgs, ros-melodic-roslib, ros-melodic-rospy, ros-melodic-rostopic
+Homepage: https://github.com/strands-project/strands_perception_people
+Standards-Version: 3.9.2
+
+Package: ros-melodic-detector-msg-to-pose-array
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-melodic-genpy, ros-melodic-geometry-msgs, ros-melodic-roslib, ros-melodic-rospy, ros-melodic-rostopic
+Description: The detector_msg_to_pose_array package
