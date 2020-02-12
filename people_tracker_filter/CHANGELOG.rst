@@ -2,6 +2,9 @@
 Changelog for package people_tracker_filter
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+1.10.0 (2020-02-12)
+-------------------
+
 1.9.0 (2019-12-19)
 ------------------
 * Frame_id fix (`#228 <https://github.com/strands-project/strands_perception_people/issues/228>`_)
